@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import TechBackground from './components/TechBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -28,7 +29,8 @@ const App: React.FC = () => {
   }, [darkMode]);
 
   return (
-    <div className={`min-h-screen transition-colors duration-700 ${darkMode ? 'bg-[#0a0f1a]' : 'bg-white'}`}>
+    <div className={`min-h-screen transition-colors duration-700`}>
+      <TechBackground darkMode={darkMode} />
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Hero />
       <About />

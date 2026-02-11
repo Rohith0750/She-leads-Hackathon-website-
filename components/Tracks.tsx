@@ -4,7 +4,7 @@ import { TRACKS } from '../constants';
 
 const Tracks: React.FC = () => {
   return (
-    <section id="tracks" className="py-32 bg-white dark:bg-[#0a0f1a]">
+    <section id="tracks" className="relative py-32 transition-colors duration-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <div className="text-she-neon font-black tracking-widest uppercase text-sm mb-4 italic">Choose Your Battleground</div>

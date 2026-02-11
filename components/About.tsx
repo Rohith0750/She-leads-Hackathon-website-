@@ -3,7 +3,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-slate-50 dark:bg-slate-900/50">
+    <section id="about" className="py-24 md:py-32 bg-slate-50/80 backdrop-blur-sm dark:bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div>

@@ -4,7 +4,7 @@ import { TIMELINE } from '../constants';
 
 const Timeline: React.FC = () => {
   return (
-    <section id="timeline" className="py-32 bg-white dark:bg-[#0a0f1a]">
+    <section id="timeline" className="relative py-32 transition-colors duration-700">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-24">
           <h2 className="text-5xl font-black text-slate-900 dark:text-white mb-6 uppercase tracking-tighter">Event Journey</h2>
