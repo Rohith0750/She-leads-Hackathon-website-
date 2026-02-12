@@ -19,7 +19,8 @@ export interface Sponsor {
   id: number;
   name: string;
   logo: string;
-  tier: 'Platinum' | 'Gold' | 'Silver';
+  tier: 'Platform Partner' | 'Platinum' | 'Gold' | 'Silver';
+  description?: string;
 }
 
 export interface TimelineItem {
@@ -28,6 +29,7 @@ export interface TimelineItem {
   date: string;
   event: string;
   description: string;
+  icon?: string;
 }
 
 export interface Prize {

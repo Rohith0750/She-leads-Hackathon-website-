@@ -17,18 +17,15 @@ export const TEAM: TeamMember[] = [
 ];
 
 export const SPONSORS: Sponsor[] = [
-  { id: 1, name: 'TechGiant', logo: 'https://picsum.photos/200/100?random=11', tier: 'Platinum' },
-  { id: 2, name: 'CloudScale', logo: 'https://picsum.photos/200/100?random=12', tier: 'Gold' },
-  { id: 3, name: 'DataStream', logo: 'https://picsum.photos/200/100?random=13', tier: 'Silver' },
-  { id: 4, name: 'CodeHub', logo: 'https://picsum.photos/200/100?random=14', tier: 'Silver' },
+  { id: 0, name: 'UNSTOP', logo: 'https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/unstop-logo-color.png', tier: 'Platform Partner', description: "India's Largest Platform for Competitions & Hackathons" },
 ];
 
 export const TIMELINE: TimelineItem[] = [
-  { id: 1, date: 'Oct 15', time: '09:00 AM', event: 'Registration & Breakfast', description: 'Check-in at the main hall and grab some fuel.' },
-  { id: 2, date: 'Oct 15', time: '11:00 AM', event: 'Opening Ceremony', description: 'Kickoff with guest speakers and track reveal.' },
-  { id: 3, date: 'Oct 15', time: '12:00 PM', event: 'Hacking Begins!', description: 'Clock starts. Let the innovation begin.' },
-  { id: 4, date: 'Oct 16', time: '12:00 PM', event: 'Hacking Ends', description: 'Submit your projects to the portal.' },
-  { id: 5, date: 'Oct 16', time: '03:00 PM', event: 'Judging & Demos', description: 'Present your work to our expert panel.' },
+  { id: 1, date: '15th Feb', time: 'REGISTRATION', event: 'REGISTRATIONS OPEN', description: 'Registrations open on Unstop online platform.', icon: '📝' },
+  { id: 2, date: '15th – 22nd Feb', time: 'SUBMISSION', event: 'ROUND 1 — PPT SUBMISSIONS', description: 'PPT submissions open for 10 days, allowing participants across the country to submit their ideas.', icon: '💡' },
+  { id: 3, date: '27th Feb', time: 'ANNOUNCEMENT', event: 'ROUND 1 RESULTS ANNOUNCEMENT', description: 'Announcement of selected teams who will participate in the 24-hour offline round.', icon: '📢' },
+  { id: 4, date: '5th March', time: 'KICKOFF', event: '24-HOUR HACKATHON BEGINS', description: 'The 24-hour She-Fight begins.', icon: '🚀' },
+  { id: 5, date: '6th March', time: 'CLOSING', event: 'WINNERS ANNOUNCEMENT', description: 'Winners will be announced on the final day of the event.', icon: '🏆' },
 ];
 
 export const PRIZES: Prize[] = [
@@ -38,7 +35,9 @@ export const PRIZES: Prize[] = [
 ];
 
 export const FAQS: FAQItem[] = [
-  { id: 1, question: 'Who can participate?', answer: 'Any university student or recent graduate (within 1 year) can join.' },
-  { id: 2, question: 'Is it free?', answer: 'Yes! Registration, food, and swag are all completely free for participants.' },
-  { id: 3, question: 'Team size?', answer: 'You can work solo or in teams of up to 4 people.' },
+  { id: 1, question: 'Who can participate?', answer: 'Only UG (Undergraduate) students are eligible to participate.' },
+  { id: 2, question: 'Is there any fee?', answer: 'Yes, the fee is ₹800 per team for shortlisted teams only.' },
+  { id: 3, question: 'How do teams work?', answer: 'Teams must consist of 4 members. Interdisciplinary and cross-institutional teams are encouraged.' },
+  { id: 4, question: 'What is the event format?', answer: 'It is a 24-hour offline hackathon.' },
+  { id: 5, question: 'Where is the venue?', answer: 'Venue details: Presidency University.' },
 ];
