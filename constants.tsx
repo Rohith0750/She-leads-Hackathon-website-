@@ -95,9 +95,9 @@ export const TIMELINE: TimelineItem[] = [
 ];
 
 export const PRIZES: Prize[] = [
-  { id: 1, rank: 'First Prize', amount: '₹30,000', perks: ['Internship Opportunity', 'Mentorship Program', 'Exclusive Gear'], color: 'from-yellow-400 to-yellow-600' },
-  { id: 2, rank: 'Second Prize', amount: '₹20,000', perks: ['Productivity Suite Licenses', 'Swag Kit'], color: 'from-slate-300 to-slate-500' },
-  { id: 3, rank: 'Third Prize', amount: '₹10,000', perks: ['Voucher Bundle', 'Participation Certificate'], color: 'from-orange-400 to-orange-600' },
+  { id: 1, rank: 'First Prize', amount: '₹30,000', perks: ['Certificates'], color: 'from-yellow-400 to-yellow-600' },
+  { id: 2, rank: 'Second Prize', amount: '₹20,000', perks: ['Certificates'], color: 'from-slate-300 to-slate-500' },
+  { id: 3, rank: 'Third Prize', amount: '₹10,000', perks: ['Certificates'], color: 'from-orange-400 to-orange-600' },
 ];
 
 export const FAQS: FAQItem[] = [

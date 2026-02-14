@@ -6,7 +6,7 @@ const prizeData = [
   {
     rank: "2nd Prize",
     amount: "₹20,000",
-    description: "Certificate",
+    description: "Certificates",
     icon: "🥈",
     color: "from-slate-300 to-slate-400", // Silver gradient
     glow: "shadow-slate-400/50",
@@ -18,7 +18,7 @@ const prizeData = [
   {
     rank: "1st Prize",
     amount: "₹30,000",
-    description: "Swags + Goodies + Certificate",
+    description: "Certificates",
     icon: "🥇",
     color: "from-yellow-400 to-orange-500", // Gold gradient
     glow: "shadow-yellow-500/50",
@@ -30,7 +30,7 @@ const prizeData = [
   {
     rank: "3rd Prize",
     amount: "₹10,000",
-    description: "Certificate",
+    description: "Certificates",
     icon: "🥉",
     color: "from-orange-400 to-red-500", // Bronze gradient
     glow: "shadow-orange-500/50",
