@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-center border-t border-slate-200 dark:border-white/5 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center border-t border-slate-200 dark:border-white/5 pt-12">
 
           {/* Brand */}
           <div className="text-center md:text-left">
@@ -41,13 +41,6 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-slate-500 dark:text-slate-400 text-xs font-bold uppercase tracking-widest">Presidency University</p>
-          </div>
-
-          {/* Links */}
-          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-slate-500 dark:text-slate-400 font-bold text-xs uppercase tracking-widest">
-            <a href="#" className="hover:text-blue-600 dark:hover:text-[#39ff14] transition-colors">Privacy</a>
-            <a href="#" className="hover:text-blue-600 dark:hover:text-[#39ff14] transition-colors">Code of Conduct</a>
-            <a href="mailto:harvestclub.presidency@gmail.com" className="hover:text-blue-600 dark:hover:text-[#39ff14] transition-colors">Contact</a>
           </div>
 
           {/* Socials */}

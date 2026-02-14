@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Rocket, Globe } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -22,13 +22,13 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
-              <div className="p-8 rounded-[2rem] bg-white dark:bg-[#0a0f1a] border border-slate-200 dark:border-white/10 shadow-sm">
-                <div className="text-4xl mb-4">🚀</div>
+              <div className="p-8 rounded-[2rem] bg-white dark:bg-[#0a0f1a] border border-slate-200 dark:border-white/10 shadow-sm group hover:border-she-neon/50 transition-colors">
+                <Rocket className="w-10 h-10 text-she-blue dark:text-she-neon mb-4" />
                 <h3 className="font-black text-slate-900 dark:text-white text-lg uppercase tracking-tight">Leadership</h3>
                 <p className="text-sm text-slate-500 dark:text-slate-400">Master the art of tech leadership.</p>
               </div>
-              <div className="p-8 rounded-[2rem] bg-white dark:bg-[#0a0f1a] border border-slate-200 dark:border-white/10 shadow-sm">
-                <div className="text-4xl mb-4">✨</div>
+              <div className="p-8 rounded-[2rem] bg-white dark:bg-[#0a0f1a] border border-slate-200 dark:border-white/10 shadow-sm group hover:border-pink-500/50 transition-colors">
+                <Globe className="w-10 h-10 text-pink-500 mb-4" />
                 <h3 className="font-black text-slate-900 dark:text-white text-lg uppercase tracking-tight">Impact</h3>
                 <p className="text-sm text-slate-500 dark:text-slate-400">Solve real-world socio-economic problems.</p>
               </div>

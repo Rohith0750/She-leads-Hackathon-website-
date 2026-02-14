@@ -5,7 +5,7 @@ import React from 'react';
 const prizeData = [
   {
     rank: "2nd Prize",
-    amount: "₹30,000",
+    amount: "₹20,000",
     description: "Certificate",
     icon: "🥈",
     color: "from-slate-300 to-slate-400", // Silver gradient
@@ -17,7 +17,7 @@ const prizeData = [
   },
   {
     rank: "1st Prize",
-    amount: "₹50,000",
+    amount: "₹30,000",
     description: "Swags + Goodies + Certificate",
     icon: "🥇",
     color: "from-yellow-400 to-orange-500", // Gold gradient
@@ -29,7 +29,7 @@ const prizeData = [
   },
   {
     rank: "3rd Prize",
-    amount: "₹20,000",
+    amount: "₹10,000",
     description: "Certificate",
     icon: "🥉",
     color: "from-orange-400 to-red-500", // Bronze gradient
@@ -52,7 +52,7 @@ const Prizes: React.FC = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-she-blue to-she-neon rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative px-10 py-6 bg-white dark:bg-[#0a0f1a] ring-1 ring-gray-900/5 dark:ring-white/10 rounded-2xl leading-none flex flex-col items-center">
               <span className="text-she-blue dark:text-she-neon text-xs font-black tracking-[0.3em] uppercase mb-2">Total Prize Pool</span>
-              <span className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">₹1,00,000</span>
+              <span className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">₹60,000</span>
               <div className="h-1 w-16 bg-gradient-to-r from-she-blue to-she-neon rounded-full mt-4"></div>
             </div>
           </div>

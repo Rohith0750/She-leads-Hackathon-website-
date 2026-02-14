@@ -2,8 +2,11 @@
 export interface Track {
   id: number;
   title: string;
-  description: string;
-  icon: string;
+  shortDescription: string;
+  fullDescription: string;
+  subTracks: string[];
+  themeColor: string;
+  iconName: 'accessibility' | 'shield-check' | 'sprout' | 'sparkles' | 'credit-card';
 }
 
 export interface TeamMember {
@@ -29,7 +32,6 @@ export interface TimelineItem {
   date: string;
   event: string;
   description: string;
-  icon?: string;
 }
 
 export interface Prize {

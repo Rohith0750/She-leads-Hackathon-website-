@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Vision: React.FC = () => {
@@ -7,7 +6,6 @@ const Vision: React.FC = () => {
       title: "Innovate",
       subtitle: "The Power of Creation",
       description: "Inspiring women changemakers to build impactful real-world tech solutions. We don't just write code; we architect solutions for tomorrow's challenges.",
-      icon: "⚡",
       color: "from-she-blue to-blue-400",
       delay: "0"
     },
@@ -15,7 +13,6 @@ const Vision: React.FC = () => {
       title: "Empower",
       subtitle: "The Strength of Growth",
       description: "Helping women confidently innovate, lead, and grow in tech careers. We provide the mentorship, network, and tools necessary to break glass ceilings.",
-      icon: "💎",
       color: "from-purple-500 to-she-blue",
       delay: "100"
     },
@@ -23,7 +20,6 @@ const Vision: React.FC = () => {
       title: "Lead",
       subtitle: "The Future of Impact",
       description: "Building an inclusive ecosystem with creativity, leadership, and equal opportunities. Our vision is a world where tech leadership is diverse by default.",
-      icon: "👑",
       color: "from-she-neon to-green-400",
       delay: "200"
     }
@@ -58,38 +54,35 @@ const Vision: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Side: Staggered Bento Grid */}
-          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Right Side: Professional List/Grid */}
+          <div className="lg:w-2/3 flex flex-col gap-6">
             {visionPoints.map((point, index) => (
               <div
                 key={point.title}
-                className={`group relative p-1 rounded-[2.5rem] transition-all duration-500 hover:-translate-y-2 ${index === 1 ? 'md:mt-12' : index === 2 ? 'md:-mt-12 md:col-span-2 md:max-w-[50%] md:mx-auto' : ''
-                  }`}
+                className="group relative p-[1px] rounded-3xl transition-all duration-500 hover:scale-[1.01]"
               >
-                {/* Glow Border Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${point.color} opacity-10 blur-xl group-hover:opacity-30 transition-opacity rounded-[2.5rem]`}></div>
-
-                {/* Main Card Content */}
-                <div className="relative h-full p-10 md:p-12 rounded-[2.4rem] bg-slate-50 dark:bg-white/[0.03] border border-slate-200 dark:border-white/10 backdrop-blur-md overflow-hidden flex flex-col">
-                  {/* Floating Icon */}
-                  <div className="text-5xl mb-8 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-500">
-                    {point.icon}
+                <div className="relative p-10 bg-white dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 rounded-3xl overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-slate-200/50 dark:group-hover:shadow-none dark:group-hover:bg-white/[0.04] dark:group-hover:border-white/10">
+                  {/* Number Watermark */}
+                  <div className="absolute top-0 right-0 p-8 opacity-5 font-black text-8xl text-slate-900 dark:text-white pointer-events-none font-sans group-hover:opacity-10 transition-opacity">
+                    0{index + 1}
                   </div>
 
-                  <div className="mt-auto">
-                    <h4 className="text-xs font-black uppercase tracking-widest text-she-blue dark:text-she-neon mb-2">
-                      {point.subtitle}
-                    </h4>
-                    <h3 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-6 uppercase tracking-tighter">
-                      {point.title}
-                    </h3>
-                    <p className="text-slate-500 dark:text-slate-400 text-base md:text-lg font-semibold leading-relaxed">
-                      {point.description}
-                    </p>
-                  </div>
+                  <div className="flex flex-col md:flex-row md:items-center gap-6 relative z-10">
+                    {/* Accent Line */}
+                    <div className={`w-1 h-16 md:h-24 bg-gradient-to-b ${point.color} rounded-full`}></div>
 
-                  {/* Aesthetic Corner Element */}
-                  <div className={`absolute -bottom-10 -right-10 w-32 h-32 bg-gradient-to-br ${point.color} opacity-5 blur-2xl group-hover:opacity-20 transition-all`}></div>
+                    <div>
+                      <h4 className="text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-2">
+                        {point.subtitle}
+                      </h4>
+                      <h3 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-4 uppercase tracking-tight">
+                        {point.title}
+                      </h3>
+                      <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-2xl">
+                        {point.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
