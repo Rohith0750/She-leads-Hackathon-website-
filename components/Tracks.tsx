@@ -31,7 +31,7 @@ const Tracks: React.FC = () => {
   const [activeTrack, setActiveTrack] = useState<number | null>(null);
 
   return (
-    <section id="tracks" className="relative py-20 lg:py-32 transition-colors duration-700 overflow-hidden">
+    <section id="tracks" className="relative py-20 lg:py-32 overflow-hidden">
 
       {/* Modal/Overlay for Active Track */}
       {activeTrack !== null && (
@@ -40,11 +40,11 @@ const Tracks: React.FC = () => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setActiveTrack(null)}
           ></div>
-          <div className="relative w-full max-w-4xl bg-slate-900 border border-slate-700 rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
+          <div className="relative w-full max-w-4xl bg-she-card border border-slate-200 rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
             {/* Close Button */}
             <button
               onClick={() => setActiveTrack(null)}
-              className="absolute top-4 right-4 p-2 rounded-full hover:bg-white/10 text-slate-400 hover:text-white transition-colors z-10"
+              className="absolute top-4 right-4 p-2 rounded-full hover:bg-black/5 text-slate-400 hover:text-slate-900 transition-colors z-10"
             >
               <X size={24} />
             </button>
@@ -64,23 +64,23 @@ const Tracks: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-8 md:p-12 bg-slate-950">
-                <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <Sparkles className="text-she-neon" size={20} />
+              <div className="p-8 md:p-12 bg-she-navbar">
+                <h4 className="text-xl font-bold text-she-text mb-4 flex items-center gap-2">
+                  <Sparkles className="text-white" size={20} />
                   About this Track
                 </h4>
-                <p className="text-slate-400 mb-8 leading-relaxed">
+                <p className="text-she-text mb-8 leading-relaxed font-medium">
                   {TRACKS.find(t => t.id === activeTrack)?.fullDescription}
                 </p>
 
-                <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <CheckCircle2 className="text-she-neon" size={20} />
+                <h4 className="text-xl font-bold text-she-text mb-4 flex items-center gap-2">
+                  <CheckCircle2 className="text-white" size={20} />
                   Sub-Tracks
                 </h4>
                 <ul className="space-y-3">
                   {TRACKS.find(t => t.id === activeTrack)?.subTracks.map((sub, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-slate-300">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-she-neon shrink-0"></div>
+                    <li key={idx} className="flex items-start gap-3 text-she-text font-medium">
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white shrink-0"></div>
                       <span>{sub}</span>
                     </li>
                   ))}
@@ -93,33 +93,33 @@ const Tracks: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <div className="text-she-neon font-black tracking-widest uppercase text-sm mb-4 italic">Choose Your Battleground</div>
-          <h2 className="text-5xl font-black text-slate-900 dark:text-white mb-6 tracking-tighter uppercase">Competition Tracks</h2>
-          <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-lg font-medium">Focus on high-impact technology areas tailored for women-led innovation.</p>
+          <div className="text-she-primary font-black tracking-widest uppercase text-sm mb-4 italic">Choose Your Battleground</div>
+          <h2 className="text-5xl font-black text-she-text mb-6 tracking-tighter uppercase">Competition Tracks</h2>
+          <p className="text-she-text/70 max-w-2xl mx-auto text-lg font-medium">Focus on high-impact technology areas tailored for women-led innovation.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {TRACKS.map((track) => (
             <div
               key={track.id}
-              className={`group relative p-8 rounded-[2.5rem] bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${colorMap[track.themeColor]} flex flex-col h-full`}
+              className={`group relative p-8 rounded-[2.5rem] bg-she-card border border-white/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${colorMap[track.themeColor]} flex flex-col h-full`}
             >
-              <div className="mb-6 w-16 h-16 p-3 rounded-2xl bg-white/5 border border-white/10 group-hover:scale-110 transition-transform duration-500 group-hover:bg-white/10">
+              <div className="mb-6 w-16 h-16 p-3 rounded-2xl bg-she-background border border-black/5 group-hover:scale-110 transition-transform duration-500 group-hover:bg-white/50">
                 {iconMap[track.iconName]}
               </div>
 
-              <h3 className="text-2xl font-black mb-3 text-slate-900 dark:text-white uppercase tracking-tight leading-tight group-hover:text-blue-600 dark:group-hover:text-she-neon transition-colors">
+              <h3 className="text-2xl font-black mb-3 text-she-text uppercase tracking-tight leading-tight group-hover:text-she-primary transition-colors">
                 {track.title}
               </h3>
 
-              <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium text-sm mb-8 flex-grow">
+              <p className="text-she-text/70 leading-relaxed font-medium text-sm mb-8 flex-grow">
                 {track.shortDescription}
               </p>
 
-              <div className="mt-auto pt-6 border-t border-slate-200 dark:border-white/5">
+              <div className="mt-auto pt-6 border-t border-slate-100">
                 <button
                   onClick={() => setActiveTrack(track.id)}
-                  className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-she-neon transition-colors"
+                  className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-she-text group-hover:text-she-primary transition-colors"
                 >
                   Explore Track <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </button>

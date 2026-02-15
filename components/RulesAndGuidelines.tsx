@@ -1,5 +1,7 @@
 
 import React, { useState } from 'react';
+import rulebook from '../SHELEADS 2.0 RULEBOOK.docx';
+
 
 const RulesAndGuidelines: React.FC = () => {
     const [openIdx, setOpenIdx] = useState<number | null>(0);
@@ -15,10 +17,10 @@ const RulesAndGuidelines: React.FC = () => {
             content: (
                 <div className="space-y-4">
                     <p>
-                        Nexovate'25 is a 24-hour national-level cross-domain hackathon aimed at empowering students to solve real-world challenges through innovation, creativity, and rapid prototyping.
+                        SheLeads 2.0 is a 24-hour national-level women-centric hackathon designed to empower women innovators to build technology-driven solutions for real-world societal challenges.
                     </p>
                     <p>
-                        The event focuses on technology-driven problem-solving across diverse tracks such as Sustainability, Healthcare, Cybersecurity, and Social Impact. Participants work in teams to develop functional prototypes or impactful ideas evaluated by industry experts and researchers.
+                        The hackathon focuses on fostering leadership, creativity, collaboration, and rapid prototyping in an inclusive environment. Participants will work in teams to ideate, build, and present impactful solutions across multiple social-impact technology tracks, evaluated by expert mentors and jury members from industry and academia.
                     </p>
                 </div>
             )
@@ -27,12 +29,24 @@ const RulesAndGuidelines: React.FC = () => {
             id: '02',
             title: '02 — Team Composition',
             content: (
-                <ul className="list-disc pl-5 space-y-2">
-                    <li>Teams must consist of exactly 4 undergraduate students</li>
-                    <li>Interdisciplinary and cross-institutional teams are encouraged</li>
-                    <li>Each student can participate in only one team</li>
-                    <li>No changes to team members are allowed after registration</li>
-                </ul>
+                <div className="space-y-6">
+                    <ul className="list-disc pl-5 space-y-2">
+                        <li>Teams must consist of 2-4 members.</li>
+                        <li>The hackathon is open for national-level participation, including Presidency University students.</li>
+                        <li>Cross-institution and interdisciplinary teams are allowed and encouraged.</li>
+                        <li>Each participant can be a part of only one team.</li>
+                        <li>No changes to team members will be allowed after registration.</li>
+                    </ul>
+                    <div>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">Mandatory Women Leadership Rule</h4>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>Every team must include at least one female participant.</li>
+                            <li>The Team Leader must be a female participant (mandatory).</li>
+                            <li>The female team leader will be the official point of contact for all communications.</li>
+                            <li>Any team failing to comply with this rule will be disqualified.</li>
+                        </ul>
+                    </div>
+                </div>
             )
         },
         {
@@ -41,169 +55,234 @@ const RulesAndGuidelines: React.FC = () => {
             content: (
                 <div className="space-y-6">
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Registration</h4>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">A. Registration</h4>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Teams must register exclusively via Unstop</li>
-                            <li>Registration is free for all applicants</li>
-                            <li>Each team must upload a project proposal using the official PPT template</li>
-                            <li>Only one submission per team is allowed</li>
-                            <li>All shortlisted teams will receive an email and will be invited to attend the in-person hackathon.</li>
+                            <li>Teams must register exclusively through the Unstop platform.</li>
+                            <li>Registration is open for national-level participation.</li>
+                            <li>Each team must upload a project proposal using the official PPT template.</li>
+                            <li>Only one submission per team is permitted.</li>
+                            <li>Teams must select one track to submit their idea under.</li>
+                            <li>Teams will not be allowed to change their track or idea after submission.</li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Selection</h4>
-                        <p className="mb-2">A total of 25 teams will be shortlisted (5 teams per track) based on:</p>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">B. Participation Limit</h4>
+                        <p>The hackathon will host approximately 200 participants, which corresponds to around 50 teams.</p>
+                    </div>
+                    <div>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">C. Selection & Shortlisting</h4>
+                        <p className="mb-2">A total of 50 teams will be shortlisted, with 10 teams per track, based on:</p>
                         <ul className="list-disc pl-5 space-y-1">
                             <li>Innovation & Originality</li>
-                            <li>Relevance to Chosen Theme</li>
-                            <li>Practical Feasibility</li>
-                            <li>Social or Technological Impact</li>
+                            <li>Relevance to the chosen track</li>
+                            <li>Practical feasibility</li>
+                            <li>Social or technological impact</li>
+                            <li>Clarity of the proposal</li>
                         </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Post-Shortlisting Requirements</h4>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Join the official WhatsApp group</li>
-                            <li>Pay a non-refundable fee of ₹800 per team</li>
-                            <li>Submit a signed Parental Consent Form (mandatory for all team members)</li>
-                        </ul>
-                    </div>
-                    <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-500/30">
-                        <p className="font-bold text-red-600 dark:text-red-400">⚠️ Failure to complete any of these steps by the deadline will result in automatic disqualification</p>
+                        <p className="mt-2 text-sm italic">All shortlisted teams will receive an email confirmation and will be invited for the offline 24-hour hackathon round. Teams who are not selected will also be notified accordingly.</p>
                     </div>
                 </div>
             )
         },
         {
             id: '04',
-            title: '04 — Event Schedule & Logistics',
+            title: '04 — Tracks',
             content: (
-                <div className="space-y-6">
+                <div className="space-y-8">
+                    <p className="font-medium">She Leads 2.0 includes the following 5 social-impact technology tracks:</p>
+
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Venue & Access</h4>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>The hackathon will take place in-person at Presidency University, Bengaluru</li>
-                            <li>Participants will not be allowed to leave campus during the hackathon</li>
+                        <h4 className="font-bold text-lg text-she-primary">I. EmpowerAbility</h4>
+                        <p className="text-sm text-she-text/70 mb-2">Technology that empowers every ability.</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                            <li>Assistive AI Systems</li>
+                            <li>Speech, Vision & Multimodal Technologies</li>
+                            <li>Inclusive UX/UI Design</li>
+                            <li>EdTech & Language Accessibility Tools</li>
                         </ul>
                     </div>
+
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Facilities Provided</h4>
-                        <ul className="list-none space-y-1">
-                            <li>📶 Wi-Fi access</li>
-                            <li>⚡ 24-hour power backup</li>
-                            <li>🏢 Secure working spaces and rest zones</li>
+                        <h4 className="font-bold text-lg text-she-primary">II. SheShield: Smart Safety & Empowerment</h4>
+                        <p className="text-sm text-she-text/70 mb-2">Innovations that protect and empower women.</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                            <li>Safety & SOS Applications</li>
+                            <li>Emergency Response & Geo-Intelligence</li>
+                            <li>Smart Wearables for Protection</li>
+                            <li>Legal Awareness & Community Support Platforms</li>
                         </ul>
                     </div>
+
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Food & Refreshments</h4>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Day 1 → Snacks, Lunch, Dinner, Midnight Snacks</li>
-                            <li>Day 2 → Breakfast, Lunch, Beverages/Snacks</li>
+                        <h4 className="font-bold text-lg text-she-primary">III. AgriRise: Rural Intelligence Revolution</h4>
+                        <p className="text-sm text-she-text/70 mb-2">Smart innovation for rural transformation.</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                            <li>AI-Powered Smart Farming</li>
+                            <li>IoT & Crop Monitoring Systems</li>
+                            <li>Supply Chain & Market Optimization</li>
+                            <li>Farmer Advisory & Decision Support Systems</li>
                         </ul>
-                        <p className="mt-2 italic">Participants can bring comfort items (blankets, cushions, eye masks etc).</p>
+                    </div>
+
+                    <div>
+                        <h4 className="font-bold text-lg text-she-primary">IV. CreateX: AI for Digital Expression</h4>
+                        <p className="text-sm text-she-text/70 mb-2">Reimagining media, storytelling & immersive experiences.</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                            <li>AR/VR & Immersive Platforms</li>
+                            <li>AI-Driven Creative Media</li>
+                            <li>Generative & Interactive Content</li>
+                            <li>Next-Gen UX/UI & Experience Design</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 className="font-bold text-lg text-she-primary">V. LeadHer: FinTech & Social Impact Innovation</h4>
+                        <p className="text-sm text-she-text/70 mb-2">Building financial power & leadership ecosystems.</p>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                            <li>Women-Centric FinTech Solutions</li>
+                            <li>Entrepreneurship & Startup Platforms</li>
+                            <li>Skill Development & Career Tech</li>
+                            <li>Policy, Governance & Impact Analytics</li>
+                        </ul>
                     </div>
                 </div>
             )
         },
         {
             id: '05',
-            title: '05 — Project Development Rules',
+            title: '05 — Event Schedule & Logistics',
             content: (
                 <div className="space-y-6">
-                    <ul className="list-disc pl-5 space-y-1">
-                        <li>Brainstorming allowed before event</li>
-                        <li>Coding/design only after hackathon start</li>
-                        <li>Only software projects allowed</li>
-                        <li>Open-source libraries/APIs allowed with attribution</li>
-                        <li>No plagiarism or pre-built project submissions</li>
-                    </ul>
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Submission</h4>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">A. Venue & Access</h4>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Source code must be submitted via GitHub or equivalent</li>
-                            <li>Optional demo video or presentation allowed</li>
-                            <li>Must submit before 24-hour deadline ends</li>
+                            <li>The hackathon will be conducted offline at Presidency University, Bengaluru.</li>
+                            <li>Participants will not be allowed to leave the campus during the hackathon for safety and integrity reasons.</li>
+                            <li>Movement outside designated hackathon zones is strictly prohibited unless authorized by organizers for emergencies.</li>
                         </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">B. Facilities Provided</h4>
+                        <ul className="list-none space-y-1">
+                            <li>📶 Wi-Fi access for all participants</li>
+                            <li>⚡ Power backup</li>
+                            <li>🏢 Secure working spaces and designated rest zones</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">C. Food & Refreshments</h4>
+                        <p className="mb-2">Organizers will provide:</p>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>Day 1: Snacks, Lunch, Dinner, Midnight snacks</li>
+                            <li>Day 2: Breakfast, Lunch, Beverages/Snacks</li>
+                        </ul>
+                        <p className="mt-2 text-sm italic">Participants may carry small comfort items (blankets, cushions, eye masks, etc.) for the overnight stay.<br />All belongings may be checked upon entry, and the organizers will not be responsible for loss or damage to personal items.</p>
                     </div>
                 </div>
             )
         },
         {
             id: '06',
-            title: '06 — Mentorship & Support',
-            content: (
-                <ul className="list-disc pl-5 space-y-2">
-                    <li>On-site mentors available during hackathon</li>
-                    <li>Guidance on design, architecture, debugging, strategy</li>
-                    <li>Volunteers available for logistics support</li>
-                </ul>
-            )
-        },
-        {
-            id: '07',
-            title: '07 — Judging Process',
+            title: '06 — Project Development Rules',
             content: (
                 <div className="space-y-6">
                     <ul className="list-disc pl-5 space-y-1">
-                        <li>5 Industry Judges (one per track)</li>
-                        <li>Final live demo round → Top team from each track presents</li>
+                        <li>Teams may brainstorm and plan before the event.</li>
+                        <li>However, all implementation (coding, design, hardware assembly) must begin only after the hackathon officially starts.</li>
+                        <li>Both software and hardware projects are allowed.</li>
+                        <li>Use of open-source libraries, APIs, and public datasets is permitted with proper attribution.</li>
+                        <li>Plagiarism, copying, or submitting previously completed work is strictly prohibited.</li>
                     </ul>
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Judging Criteria</h4>
-                        <ul className="list-none space-y-1">
-                            <li>Innovation & Creativity — 25%</li>
-                            <li>Technical Complexity — 25%</li>
-                            <li>Relevance to Track — 10%</li>
-                            <li>Implementation & Functionality — 30%</li>
-                            <li>Presentation & Communication — 10%</li>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">Items to Submit</h4>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>A GitHub repository link (or equivalent)</li>
+                            <li>A working prototype/demo</li>
+                            <li>(Optional) a demo video or final presentation</li>
                         </ul>
+                        <p className="mt-2 text-red-500 font-bold text-sm">Submissions must be completed before the deadline. Late submissions will not be accepted.</p>
                     </div>
-                    <p className="font-bold italic">Judges decision is final.</p>
                 </div>
             )
         },
         {
-            id: '08',
-            title: '08 — Awards & Recognition',
+            id: '07',
+            title: '07 — Mentorship & Support',
             content: (
-                <div className="space-y-4">
-                    <h4 className="font-black text-2xl text-she-blue dark:text-[#39ff14]">₹1,00,000 Total Prize Pool</h4>
+                <ul className="list-disc pl-5 space-y-2">
+                    <li>Teams will receive on-site mentorship and technical assistance during the hackathon if and when needed.</li>
+                    <li>Mentors will be available to provide guidance on design, architecture, strategy, or debugging.</li>
+                    <li>Organizers will also assign support volunteers to assist with logistics and queries.</li>
+                </ul>
+            )
+        },
+        {
+            id: '08',
+            title: '08 — Judging Process',
+            content: (
+                <div className="space-y-6">
                     <ul className="list-disc pl-5 space-y-1">
-                        <li>Certificates for all participants</li>
-                        <li>Networking opportunities with judges and mentors</li>
-                        <li>Winners announced during closing ceremony</li>
+                        <li>A panel of 5 expert judges (one per track) from industry will evaluate all the teams in the respective track in each of the evaluation rounds and during final submission.</li>
+                        <li>A live pitching/demo round will be held after the build phase, where the top team from each track will present their solution to all the jury members.</li>
+                        <li>Judges’ decisions are final and non-negotiable.</li>
                     </ul>
+                    <div>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">Judging Criteria</h4>
+                        <div className="overflow-x-auto">
+                            <table className="min-w-full text-sm text-left">
+                                <thead className="text-xs uppercase bg-she-navbar/10 text-she-text">
+                                    <tr>
+                                        <th scope="col" className="px-4 py-2">Evaluation Aspect</th>
+                                        <th scope="col" className="px-4 py-2">Weight</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b border-she-text/10">
+                                        <td className="px-4 py-2 font-medium">Innovation & Creativity</td>
+                                        <td className="px-4 py-2">25%</td>
+                                    </tr>
+                                    <tr className="border-b border-she-text/10">
+                                        <td className="px-4 py-2 font-medium">Technical Complexity</td>
+                                        <td className="px-4 py-2">25%</td>
+                                    </tr>
+                                    <tr className="border-b border-she-text/10">
+                                        <td className="px-4 py-2 font-medium">Relevance to Track</td>
+                                        <td className="px-4 py-2">10%</td>
+                                    </tr>
+                                    <tr className="border-b border-she-text/10">
+                                        <td className="px-4 py-2 font-medium">Implementation & Functionality</td>
+                                        <td className="px-4 py-2">30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-4 py-2 font-medium">Presentation & Communication</td>
+                                        <td className="px-4 py-2">10%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             )
         },
         {
             id: '09',
-            title: '09 — Code of Conduct & Disqualification',
+            title: '09 — Awards & Recognition',
             content: (
                 <div className="space-y-6">
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Expected Behaviour</h4>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Professional behaviour required</li>
-                            <li>Follow campus and event rules</li>
-                            <li>Cooperate with volunteers and organizers</li>
+                        <h4 className="font-black text-2xl text-she-primary mb-2">Total Cash Prize Pool: ₹60,000</h4>
+                        <ul className="list-none space-y-2 font-bold text-lg">
+                            <li className="flex items-center gap-2">🥇 1st Place: ₹30,000</li>
+                            <li className="flex items-center gap-2">🥈 2nd Place: ₹20,000</li>
+                            <li className="flex items-center gap-2">🥉 3rd Place: ₹10,000</li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Prohibited Behaviour</h4>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">Additional Perks</h4>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Harassment or discrimination</li>
-                            <li>Alcohol / Tobacco / Banned substances</li>
-                            <li>Leaving venue without permission</li>
-                            <li>Plagiarism or cheating</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-bold text-lg mb-2 text-red-500">Consequences</h4>
-                        <ul className="list-disc pl-5 space-y-1 text-red-500">
-                            <li>Immediate disqualification</li>
-                            <li>Removal from campus</li>
-                            <li>Institution notification (if needed)</li>
+                            <li>Winners will be announced during closing ceremony</li>
+                            <li>Certificates will be provided for all participants</li>
+                            <li>Opportunities to network with judges, mentors, and guests for potential incubation/follow-up support</li>
                         </ul>
                     </div>
                 </div>
@@ -211,28 +290,63 @@ const RulesAndGuidelines: React.FC = () => {
         },
         {
             id: '10',
-            title: '10 — Intellectual Property & Promotion',
+            title: '10 — Code of Conduct & Disqualification',
             content: (
                 <div className="space-y-6">
+                    <p>SHELEADS 2.0 is committed to providing a respectful, safe, and fair environment for all.</p>
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Ownership</h4>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">Expected Behaviour</h4>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Teams retain full ownership of projects</li>
-                            <li>Organizers claim no commercial rights</li>
+                            <li>Maintain professionalism and respect with peers, mentors, and staff.</li>
+                            <li>Follow all University and Hackathon rules.</li>
+                            <li>Cooperate with volunteers and organizers at all times.</li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Promotion Rights</h4>
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">Prohibited Behaviour</h4>
                         <ul className="list-disc pl-5 space-y-1">
-                            <li>Organizers may display winning projects for promotion</li>
+                            <li>Harassment, discrimination, or inappropriate conduct</li>
+                            <li>Use of alcohol, tobacco, or banned substances</li>
+                            <li>Leaving the venue without approval</li>
+                            <li>Plagiarism, cheating, or code misrepresentation</li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="font-bold text-lg mb-2 text-she-blue dark:text-[#39ff14]">Privacy</h4>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Only winning project titles published</li>
-                            <li>Code/content never shared without permission</li>
+                        <h4 className="font-bold text-lg mb-2 text-red-500">Consequences</h4>
+                        <ul className="list-disc pl-5 space-y-1 text-red-500">
+                            <li>Immediate disqualification</li>
+                            <li>Removal from campus</li>
+                            <li>Notification to home institution (if required)</li>
                         </ul>
+                        <p className="mt-2 text-sm italic">Organizers reserve the right to investigate and enforce action on any misconduct.</p>
+                    </div>
+                </div>
+            )
+        },
+        {
+            id: '11',
+            title: '11 — Intellectual Property & Promotion',
+            content: (
+                <div className="space-y-6">
+                    <ul className="list-disc pl-5 space-y-1">
+                        <li>All participants retain full ownership of their projects and intellectual property.</li>
+                        <li>Organizers will not claim any commercial rights or profits.</li>
+                        <li>By participating, teams grant the organizers non-exclusive rights to publicly display winning projects, team names, or visuals for event promotion.</li>
+                        <li>Only winning project titles will be published post-event. Project code/content will not be shared without explicit permission.</li>
+                    </ul>
+
+                    <div className="mt-6 p-4 bg-she-navbar/5 rounded-xl border border-she-navbar/10">
+                        <h4 className="font-bold text-lg mb-2 text-she-primary">Final Notes & Compliance</h4>
+                        <ul className="list-disc pl-5 space-y-1 text-sm">
+                            <li>The event schedule, rules, logistics are subject to change at discretion of organizers.</li>
+                            <li>All official communication will be sent through email and WhatsApp only.</li>
+                            <li>By registering, each participant agrees to abide by all terms listed in this handbook.</li>
+                        </ul>
+                    </div>
+
+                    <div className="mt-4 text-center">
+                        <p className="font-bold">For Queries & Support:</p>
+                        <a href="mailto:harvest-club@presidencyuniversity.in" className="text-she-primary hover:underline">harvest-club@presidencyuniversity.in</a>
                     </div>
                 </div>
             )
@@ -240,27 +354,27 @@ const RulesAndGuidelines: React.FC = () => {
     ];
 
     return (
-        <section id="rules" className="py-24 md:py-32 bg-slate-50 dark:bg-[#020617] transition-colors duration-700">
+        <section id="rules" className="py-24 md:py-32 bg-she-background transition-colors duration-700">
             <div className="max-w-4xl mx-auto px-4">
                 <div className="text-center mb-16">
                     <div className="flex items-center justify-center gap-3 mb-4">
-                        <svg className="w-8 h-8 text-she-blue dark:text-[#39ff14] animate-pulse drop-shadow-[0_0_8px_rgba(57,255,20,0.5)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <svg className="w-8 h-8 text-she-primary animate-pulse drop-shadow-sm" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white mb-4 tracking-tighter uppercase">
+                    <h2 className="text-4xl md:text-5xl font-black text-she-text mb-4 tracking-tighter uppercase">
                         RULES & GUIDELINES
                     </h2>
-                    <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">Everything you need to know to participate in Nexovate 2025</p>
+                    <p className="text-she-text/70 text-lg font-medium">Everything you need to know to participate in Nexovate 2025</p>
                 </div>
 
                 <div className="space-y-4">
                     {rulesData.map((rule, idx) => (
                         <div
                             key={rule.id}
-                            className={`group bg-white dark:bg-[#0a0f1a] border transition-all duration-300 rounded-2xl overflow-hidden ${openIdx === idx
-                                ? 'border-she-blue dark:border-[#39ff14] shadow-lg dark:shadow-[0_0_15px_rgba(57,255,20,0.15)] ring-1 ring-she-blue/20 dark:ring-[#39ff14]/20'
-                                : 'border-slate-200 dark:border-white/10 hover:border-she-blue dark:hover:border-[#39ff14]/50'
+                            className={`group bg-she-card border transition-all duration-300 rounded-2xl overflow-hidden ${openIdx === idx
+                                ? 'border-she-navbar shadow-lg ring-1 ring-she-navbar/20'
+                                : 'border-slate-200 hover:border-she-navbar'
                                 }`}
                         >
                             <button
@@ -269,16 +383,16 @@ const RulesAndGuidelines: React.FC = () => {
                                 aria-expanded={openIdx === idx}
                             >
                                 <div className="flex items-center gap-4">
-                                    <span className={`text-lg md:text-xl font-bold tracking-tight transition-colors duration-300 ${openIdx === idx ? 'text-she-blue dark:text-[#39ff14]' : 'text-slate-800 dark:text-slate-200 group-hover:text-she-blue dark:group-hover:text-[#39ff14]'
+                                    <span className={`text-lg md:text-xl font-bold tracking-tight transition-colors duration-300 ${openIdx === idx ? 'text-she-navbar' : 'text-she-text group-hover:text-she-navbar'
                                         }`}>
                                         {rule.title}
                                     </span>
                                 </div>
 
-                                <div className={`relative w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 ${openIdx === idx ? 'bg-blue-100 dark:bg-[#39ff14]/20 rotate-45' : 'bg-slate-100 dark:bg-white/5 group-hover:bg-blue-50 dark:group-hover:bg-[#39ff14]/10'
+                                <div className={`relative w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 ${openIdx === idx ? 'bg-she-navbar/20 rotate-45' : 'bg-slate-100 group-hover:bg-she-navbar/10'
                                     }`}>
                                     <svg
-                                        className={`w-4 h-4 transition-colors duration-300 ${openIdx === idx ? 'text-she-blue dark:text-[#39ff14]' : 'text-slate-400 group-hover:text-she-blue dark:group-hover:text-[#39ff14]'}`}
+                                        className={`w-4 h-4 transition-colors duration-300 ${openIdx === idx ? 'text-she-navbar' : 'text-slate-400 group-hover:text-she-navbar'}`}
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -295,8 +409,8 @@ const RulesAndGuidelines: React.FC = () => {
                             >
                                 <div className="overflow-hidden">
                                     <div className="px-6 pb-6 md:px-8 md:pb-8 pt-0">
-                                        <div className="h-px w-full bg-slate-100 dark:bg-white/5 mb-6"></div>
-                                        <div className="text-slate-600 dark:text-slate-400 text-base md:text-lg font-medium leading-relaxed">
+                                        <div className="h-px w-full bg-slate-100 mb-6"></div>
+                                        <div className="text-she-text/80 text-base md:text-lg font-medium leading-relaxed">
                                             {rule.content}
                                         </div>
                                     </div>
@@ -306,10 +420,24 @@ const RulesAndGuidelines: React.FC = () => {
                     ))}
                 </div>
 
+
+                <div className="mt-12 flex justify-center">
+                    <a
+                        href={rulebook}
+                        download="SheLeads_Rulebook.docx"
+                        className="inline-flex items-center gap-3 px-8 py-4 bg-she-primary hover:bg-she-primary/90 text-white rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-she-primary/25"
+                    >
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        Download Official Rulebook
+                    </a>
+                </div>
+
                 <div className="mt-16 text-center">
-                    <p className="text-slate-500 dark:text-slate-400 text-sm">
+                    <p className="text-she-text/60 text-sm">
                         Need Help? <br />
-                        <span className="text-she-blue dark:text-[#39ff14] font-bold">Contact the organizing team via official website channels.</span>
+                        <span className="text-she-primary font-bold">Contact the organizing team via official website channels.</span>
                     </p>
                 </div>
             </div>

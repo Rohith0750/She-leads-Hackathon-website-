@@ -1,9 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
 
-interface TechBackgroundProps {
-    darkMode: boolean;
-}
 
 class Particle {
     x: number;
@@ -66,7 +63,7 @@ class Particle {
     }
 }
 
-const TechBackground: React.FC<TechBackgroundProps> = ({ darkMode }) => {
+const TechBackground: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const mouseRef = useRef<{ x: number | null; y: number | null }>({ x: null, y: null });
 
@@ -79,7 +76,7 @@ const TechBackground: React.FC<TechBackgroundProps> = ({ darkMode }) => {
 
         let animationFrameId: number;
         let particles: Particle[] = [];
-        let connectionsOpacityMultiplier = darkMode ? 0.2 : 0.15; // Faint lines
+        let connectionsOpacityMultiplier = 0.2; // Adjusted for better visibility on new background
 
         const init = () => {
             canvas.width = window.innerWidth;
@@ -89,7 +86,7 @@ const TechBackground: React.FC<TechBackgroundProps> = ({ darkMode }) => {
             particles = [];
             const particleCount = Math.floor((canvas.width * canvas.height) / 12000); // Responsive density
 
-            const color = darkMode ? 'rgba(212, 255, 0, 0.6)' : 'rgba(37, 99, 235, 0.6)'; // she-neon vs she-blue base for particles
+            const color = 'rgba(94, 139, 111, 0.6)'; // she-accent: #5E8B6F
 
             for (let i = 0; i < particleCount; i++) {
                 particles.push(new Particle(canvas.width, canvas.height, color));
@@ -97,18 +94,8 @@ const TechBackground: React.FC<TechBackgroundProps> = ({ darkMode }) => {
         };
 
         const render = () => {
-            // Clear canvas with gradient background
-            if (darkMode) {
-                const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-                gradient.addColorStop(0, '#020617'); // slate-950
-                gradient.addColorStop(1, '#0f172a'); // slate-900
-                ctx.fillStyle = gradient;
-            } else {
-                const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-                gradient.addColorStop(0, '#f8fafc'); // slate-50
-                gradient.addColorStop(1, '#e2e8f0'); // slate-200
-                ctx.fillStyle = gradient;
-            }
+            // Clear canvas with solid background color from palette
+            ctx.fillStyle = '#FFFFFF'; // she-background
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Update and Draw Particles
@@ -131,9 +118,7 @@ const TechBackground: React.FC<TechBackgroundProps> = ({ darkMode }) => {
 
                         // Fading opacity based on distance
                         const opacity = (1 - distance / connectDistance) * connectionsOpacityMultiplier;
-                        ctx.strokeStyle = darkMode
-                            ? `rgba(212, 255, 0, ${opacity})` // she-neon lines
-                            : `rgba(37, 99, 235, ${opacity})`; // she-blue lines
+                        ctx.strokeStyle = `rgba(94, 139, 111, ${opacity})`; // she-accent lines
 
                         ctx.lineWidth = 0.5;
                         ctx.stroke();
@@ -169,7 +154,7 @@ const TechBackground: React.FC<TechBackgroundProps> = ({ darkMode }) => {
             window.removeEventListener('mouseleave', handleMouseLeave);
             cancelAnimationFrame(animationFrameId);
         };
-    }, [darkMode]);
+    }, []);
 
     return (
         <canvas

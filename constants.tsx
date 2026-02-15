@@ -86,12 +86,14 @@ export const SPONSORS: Sponsor[] = [
   { id: 0, name: 'UNSTOP', logo: 'https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/unstop-logo-color.png', tier: 'Platform Partner', description: "India's Largest Platform for Competitions & Hackathons" },
 ];
 
+import { UserPlus, FileText, Megaphone, Rocket, Trophy } from 'lucide-react';
+
 export const TIMELINE: TimelineItem[] = [
-  { id: 1, date: '15th Feb', time: 'REGISTRATION', event: 'REGISTRATIONS OPEN', description: 'Registrations open on Unstop online platform.' },
-  { id: 2, date: '15th – 22nd Feb', time: 'SUBMISSION', event: 'ROUND 1 — PPT SUBMISSIONS', description: 'PPT submissions open for 10 days, allowing participants across the country to submit their ideas.' },
-  { id: 3, date: '27th Feb', time: 'ANNOUNCEMENT', event: 'ROUND 1 RESULTS ANNOUNCEMENT', description: 'Announcement of selected teams who will participate in the 24-hour offline round.' },
-  { id: 4, date: '5th March', time: 'KICKOFF', event: '24-HOUR HACKATHON BEGINS', description: 'The 24-hour She-Fight begins.' },
-  { id: 5, date: '6th March', time: 'CLOSING', event: 'WINNERS ANNOUNCEMENT', description: 'Winners will be announced on the final day of the event.' },
+  { id: 1, date: '15th Feb', time: 'REGISTRATION', event: 'REGISTRATIONS OPEN', description: 'Registrations open on Unstop online platform.', icon: <UserPlus className="w-8 h-8 text-she-primary" /> },
+  { id: 2, date: '15th – 22nd Feb', time: 'SUBMISSION', event: 'ROUND 1 — PPT SUBMISSIONS', description: 'PPT submissions open for 10 days, allowing participants across the country to submit their ideas.', icon: <FileText className="w-8 h-8 text-she-primary" /> },
+  { id: 3, date: '27th Feb', time: 'ANNOUNCEMENT', event: 'ROUND 1 RESULTS ANNOUNCEMENT', description: 'Announcement of selected teams who will participate in the 24-hour offline round.', icon: <Megaphone className="w-8 h-8 text-she-primary" /> },
+  { id: 4, date: '5th March', time: 'KICKOFF', event: '24-HOUR HACKATHON BEGINS', description: 'The 24-hour She-Fight begins.', icon: <Rocket className="w-8 h-8 text-she-primary" /> },
+  { id: 5, date: '6th March', time: 'CLOSING', event: 'WINNERS ANNOUNCEMENT', description: 'Winners will be announced on the final day of the event.', icon: <Trophy className="w-8 h-8 text-she-primary" /> },
 ];
 
 export const PRIZES: Prize[] = [

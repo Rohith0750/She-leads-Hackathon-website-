@@ -1,4 +1,4 @@
-
+import React from 'react';
 export interface Track {
   id: number;
   title: string;
@@ -32,6 +32,7 @@ export interface TimelineItem {
   date: string;
   event: string;
   description: string;
+  icon: React.ReactNode;
 }
 
 export interface Prize {

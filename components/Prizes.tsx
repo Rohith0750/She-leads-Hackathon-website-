@@ -43,17 +43,17 @@ const prizeData = [
 
 const Prizes: React.FC = () => {
   return (
-    <section id="prizes" className="relative py-24 md:py-32 transition-colors duration-700">
+    <section id="prizes" className="relative py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Total Prize Pool Header */}
         <div className="flex justify-center mb-16 md:mb-24">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-she-blue to-she-neon rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative px-10 py-6 bg-white dark:bg-[#0a0f1a] ring-1 ring-gray-900/5 dark:ring-white/10 rounded-2xl leading-none flex flex-col items-center">
-              <span className="text-she-blue dark:text-she-neon text-xs font-black tracking-[0.3em] uppercase mb-2">Total Prize Pool</span>
-              <span className="text-4xl md:text-5xl font-black text-slate-900 dark:text-white">₹60,000</span>
-              <div className="h-1 w-16 bg-gradient-to-r from-she-blue to-she-neon rounded-full mt-4"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-she-navbar to-she-primary rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+            <div className="relative px-10 py-6 bg-she-card ring-1 ring-black/5 rounded-2xl leading-none flex flex-col items-center">
+              <span className="text-she-navbar text-xs font-black tracking-[0.3em] uppercase mb-2">Total Prize Pool</span>
+              <span className="text-4xl md:text-5xl font-black text-she-text">₹60,000</span>
+              <div className="h-1 w-16 bg-gradient-to-r from-she-navbar to-she-primary rounded-full mt-4"></div>
             </div>
           </div>
         </div>
@@ -69,10 +69,10 @@ const Prizes: React.FC = () => {
               <div className={`absolute -inset-[1px] bg-gradient-to-b ${prize.color} rounded-[2rem] opacity-20 group-hover:opacity-100 blur-sm transition duration-500`}></div>
 
               {/* Card Content */}
-              <div className="relative h-full bg-white dark:bg-[#111827] rounded-[2rem] p-8 flex flex-col items-center border border-slate-100 dark:border-white/5 overflow-hidden shadow-2xl">
+              <div className="relative h-full bg-she-card rounded-[2rem] p-8 flex flex-col items-center border border-slate-200 overflow-hidden shadow-2xl">
 
                 {/* Background Pattern (Subtle dots) */}
-                <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
+                <div className="absolute inset-0 opacity-[0.03]"
                   style={{
                     backgroundImage: 'radial-gradient(#64748b 1px, transparent 1px)',
                     backgroundSize: '20px 20px'
@@ -81,11 +81,11 @@ const Prizes: React.FC = () => {
 
                 {/* Badge/Icon */}
                 <div className={`relative w-20 h-20 mb-6 rounded-full bg-gradient-to-br ${prize.color} p-[2px] shadow-lg shadow-black/10 group-hover:scale-110 transition-transform duration-500`}>
-                  <div className="w-full h-full bg-white dark:bg-[#111827] rounded-full flex items-center justify-center text-4xl">
+                  <div className="w-full h-full bg-she-card rounded-full flex items-center justify-center text-4xl">
                     {prize.icon}
                   </div>
                   {/* Rank Number (absolute badge) */}
-                  <div className={`absolute -top-2 -right-2 w-8 h-8 rounded-full bg-gradient-to-br ${prize.color} flex items-center justify-center text-white text-xs font-bold border-2 border-white dark:border-[#111827]`}>
+                  <div className={`absolute -top-2 -right-2 w-8 h-8 rounded-full bg-gradient-to-br ${prize.color} flex items-center justify-center text-white text-xs font-bold border-2 border-white`}>
                     {idx === 1 ? '1' : idx === 0 ? '2' : '3'}
                   </div>
                 </div>
@@ -101,17 +101,17 @@ const Prizes: React.FC = () => {
                 </div>
 
                 {/* Amount */}
-                <div className="text-4xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
+                <div className="text-4xl font-black text-she-text mb-4 tracking-tight">
                   {prize.amount}
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-500 dark:text-slate-400 text-sm font-medium text-center mb-8 px-4 leading-relaxed">
+                <p className="text-she-text/70 text-sm font-medium text-center mb-8 px-4 leading-relaxed">
                   {prize.description}
                 </p>
 
                 {/* Footer / Divider */}
-                <div className="w-full mt-auto relative pt-6 border-t border-dashed border-slate-200 dark:border-white/10">
+                <div className="w-full mt-auto relative pt-6 border-t border-dashed border-slate-200">
                   <div className="flex items-center justify-center gap-2">
                     <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${prize.color}`}></div>
                     <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Winner Takes All</span>

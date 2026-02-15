@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import TechBackground from './components/TechBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -19,20 +19,10 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
-  const [darkMode, setDarkMode] = useState(true);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [darkMode]);
-
   return (
-    <div className={`min-h-screen transition-colors duration-700`}>
-      <TechBackground darkMode={darkMode} />
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+    <div className={`min-h-screen bg-she-background text-she-text`}>
+      <TechBackground />
+      <Navbar />
       <Hero />
       <About />
       <Vision />
@@ -45,9 +35,9 @@ const App: React.FC = () => {
       <div id="sponsors">
         <Sponsors />
       </div>
-      <div id="team">
+      {/* <div id="team">
         <Team />
-      </div>
+      </div> */}
       <div id="prizes">
         <Prizes />
       </div>
