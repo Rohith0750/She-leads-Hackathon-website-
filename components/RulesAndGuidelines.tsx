@@ -365,7 +365,7 @@ const RulesAndGuidelines: React.FC = () => {
                     <h2 className="text-4xl md:text-5xl font-black text-she-text mb-4 tracking-tighter uppercase">
                         RULES & GUIDELINES
                     </h2>
-                    <p className="text-she-text/70 text-lg font-medium">Everything you need to know to participate in Nexovate 2025</p>
+                    <p className="text-she-text/70 text-lg font-medium">Everything you need to know to participate in Nexovate 2026</p>
                 </div>
 
                 <div className="space-y-4">

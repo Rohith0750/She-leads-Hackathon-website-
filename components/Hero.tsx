@@ -1,5 +1,6 @@
 
 import React from 'react';
+import pptFile from '../assets/SheLeads_2.0_ppt_template.pdf';
 
 const Hero: React.FC = () => {
   return (
@@ -34,7 +35,16 @@ const Hero: React.FC = () => {
             APPLY NOW
           </button>
 
-
+          <a
+            href={pptFile}
+            download="SheLeads_2.0_ppt_Template.pdf"
+            className="w-full sm:w-auto px-10 md:px-14 py-4 md:py-6 bg-white text-she-primary border-4 border-she-primary/20 hover:border-she-primary hover:bg-she-primary/5 hover:scale-105 active:scale-95 rounded-full font-black text-lg md:text-2xl transition-all shadow-xl shadow-she-primary/10 uppercase tracking-tighter flex items-center justify-center gap-3"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Download PPT
+          </a>
         </div>
       </div>
     </section>
