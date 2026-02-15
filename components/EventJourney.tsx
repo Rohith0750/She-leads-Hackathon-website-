@@ -33,8 +33,8 @@ const EventJourney: React.FC = () => {
             ctx.clearRect(0, 0, width, height);
 
             // Fixed colors for She Leads theme
-            ctx.fillStyle = '#C84A36'; // she-primary
-            ctx.strokeStyle = 'rgba(95, 127, 163, 0.2)'; // she-navbar with opacity
+            ctx.fillStyle = '#7B3FF2'; // she-primary
+            ctx.strokeStyle = 'rgba(123, 63, 242, 0.2)'; // she-primary with opacity
 
             for (let i = 0; i < particles.length; i++) {
                 let p = particles[i];
@@ -98,7 +98,7 @@ const EventJourney: React.FC = () => {
                 {/* Header */}
                 <div className="text-center mb-24 relative">
                     <h2 className="text-5xl md:text-7xl font-bold text-she-text tracking-tight mb-4 drop-shadow-sm">
-                        EVENT <span className="text-transparent bg-clip-text bg-gradient-to-r from-she-navbar to-she-primary">JOURNEY</span>
+                        EVENT <span className="text-transparent bg-clip-text bg-gradient-to-r from-she-deepPurple to-she-primary">JOURNEY</span>
                     </h2>
                     <p className="text-she-text/70 text-lg md:text-xl font-medium tracking-wide">
                         The 24-hour sprint to build the future
@@ -109,7 +109,7 @@ const EventJourney: React.FC = () => {
                 <div className="relative">
 
                     {/* Central Vertical Line */}
-                    <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-she-navbar to-transparent shadow-[0_0_10px_#5F7FA3]"></div>
+                    <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-she-primary/30 to-transparent shadow-[0_0_10px_rgba(123,63,242,0.2)]"></div>
 
                     <div className="space-y-16">
                         {TIMELINE.map((item, index) => {
@@ -121,8 +121,8 @@ const EventJourney: React.FC = () => {
                                     <div className="hidden md:block w-1/2" />
 
                                     {/* Central Node */}
-                                    <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-6 h-6 rounded-full bg-she-background border-2 border-she-primary shadow-[0_0_15px_rgba(200,74,54,0.4)] z-20 transition-transform duration-300 hover:scale-150">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-she-navbar animate-pulse"></div>
+                                    <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 flex items-center justify-center w-6 h-6 rounded-full bg-she-background border-2 border-she-primary shadow-[0_0_15px_rgba(123,63,242,0.4)] z-20 transition-transform duration-300 hover:scale-150">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-she-primary animate-pulse"></div>
                                     </div>
 
                                     {/* Content Card */}
@@ -130,10 +130,10 @@ const EventJourney: React.FC = () => {
                                         <div className="group relative">
 
                                             {/* Card Glow Border Effect */}
-                                            <div className="absolute -inset-0.5 bg-gradient-to-r from-she-navbar to-she-accent rounded-2xl opacity-30 group-hover:opacity-80 blur transition duration-500"></div>
+                                            <div className="absolute -inset-0.5 bg-gradient-to-r from-she-primary to-she-accent rounded-2xl opacity-30 group-hover:opacity-80 blur transition duration-500"></div>
 
                                             {/* Glass Card Content */}
-                                            <div className="relative p-8 rounded-2xl bg-she-card/80 backdrop-blur-md border border-white/20 shadow-lg hover:shadow-[0_0_30px_rgba(95,127,163,0.2)] transition-all duration-300 hover:-translate-y-1">
+                                            <div className="relative p-8 rounded-2xl bg-she-card/80 backdrop-blur-md border border-she-deepPurple/10 shadow-lg hover:shadow-[0_0_30px_rgba(123,63,242,0.1)] transition-all duration-300 hover:-translate-y-1">
 
                                                 {/* Date/Time Tag & Icon */}
                                                 <div className="flex items-center justify-between mb-4">
@@ -156,7 +156,7 @@ const EventJourney: React.FC = () => {
                                                 </p>
 
                                                 {/* Decorative Neon Element */}
-                                                <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-she-accent shadow-[0_0_10px_#5E8B6F] opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                                <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-she-accent shadow-[0_0_10px_rgba(255,107,157,0.4)] opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                                             </div>
                                         </div>
@@ -170,7 +170,7 @@ const EventJourney: React.FC = () => {
 
                 {/* Bottom Fade */}
                 <div className="flex justify-center mt-24">
-                    <div className="w-px h-24 bg-gradient-to-b from-she-navbar to-transparent"></div>
+                    <div className="w-px h-24 bg-gradient-to-b from-she-primary/30 to-transparent"></div>
                 </div>
 
             </div>

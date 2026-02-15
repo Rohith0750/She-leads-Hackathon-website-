@@ -7,7 +7,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div>
-            <div className="inline-block px-4 py-1 rounded-full bg-she-navbar/10 text-she-navbar text-xs font-black tracking-widest uppercase mb-6">
+            <div className="inline-block px-4 py-1 rounded-full bg-she-primary/10 text-she-primary text-xs font-black tracking-widest uppercase mb-6">
               Empowerment Through Code
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-she-text mb-6 md:mb-8 tracking-tighter uppercase">
@@ -22,28 +22,28 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
-              <div className="p-8 rounded-[2rem] bg-she-card border border-slate-100 shadow-sm group hover:border-she-accent/50 transition-colors">
-                <Rocket className="w-10 h-10 text-she-navbar mb-4" />
+              <div className="p-8 rounded-[2rem] bg-she-card border border-she-deepPurple/5 shadow-sm group hover:border-she-accent/50 transition-colors">
+                <Rocket className="w-10 h-10 text-she-primary mb-4" />
                 <h3 className="font-black text-she-text text-lg uppercase tracking-tight">Leadership</h3>
-                <p className="text-sm text-she-footer">Master the art of tech leadership.</p>
+                <p className="text-sm text-she-secondaryText">Master the art of tech leadership.</p>
               </div>
-              <div className="p-8 rounded-[2rem] bg-she-card border border-slate-100 shadow-sm group hover:border-pink-500/50 transition-colors">
+              <div className="p-8 rounded-[2rem] bg-she-card border border-she-deepPurple/5 shadow-sm group hover:border-pink-500/50 transition-colors">
                 <Globe className="w-10 h-10 text-pink-500 mb-4" />
                 <h3 className="font-black text-she-text text-lg uppercase tracking-tight">Impact</h3>
-                <p className="text-sm text-she-footer">Solve real-world socio-economic problems.</p>
+                <p className="text-sm text-she-secondaryText">Solve real-world socio-economic problems.</p>
               </div>
             </div>
           </div>
           <div className="relative group mt-12 md:mt-0">
             <div className="absolute -inset-4 bg-she-accent/20 rounded-[4rem] blur-2xl group-hover:bg-she-accent/30 transition-all"></div>
-            <div className="relative aspect-[4/5] rounded-[2rem] md:rounded-[3.5rem] overflow-hidden border-4 md:border-8 border-white shadow-2xl bg-gradient-to-br from-pink-500/20 via-purple-600 to-blue-500/20">
+            <div className="relative aspect-[4/5] rounded-[2rem] md:rounded-[3.5rem] overflow-hidden border-4 md:border-8 border-white shadow-2xl bg-gradient-to-br from-she-accent/20 via-she-primary to-she-primary/20">
               <div className="absolute inset-0 flex items-center justify-center">
                 <Code2 className="w-32 h-32 md:w-48 md:h-48 text-white opacity-90 drop-shadow-2xl" strokeWidth={1.5} />
               </div>
             </div>
-            <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 p-6 md:p-10 bg-she-navbar rounded-[2rem] md:rounded-[2.5rem] shadow-2xl transform rotate-2">
+            <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 p-6 md:p-10 bg-she-primary rounded-[2rem] md:rounded-[2.5rem] shadow-2xl transform rotate-2">
               <div className="text-3xl md:text-5xl font-black text-white mb-1 tracking-tighter">5-6</div>
-              <div className="text-blue-100 font-bold uppercase tracking-widest text-xs md:text-base whitespace-nowrap">MARCH 2026</div>
+              <div className="text-white/80 font-bold uppercase tracking-widest text-xs md:text-base whitespace-nowrap">MARCH 2026</div>
             </div>
           </div>
         </div>

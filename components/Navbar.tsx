@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
               <span className="text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
                 She Leads
               </span>
-              <span className="font-mono text-sm tracking-widest mt-0.5 transition-colors duration-700 text-white">
+              <span className="font-mono text-sm tracking-widest mt-0.5 transition-colors duration-700 text-she-primary">
                 2026
               </span>
             </div>
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-2 text-[12px] font-black transition-all duration-300 tracking-widest rounded-full uppercase ${hoverTextClass} ${activeSection === link.name ? activeTextClass : 'text-she-text'
+                className={`px-4 py-2 text-[12px] font-black transition-all duration-300 tracking-widest rounded-full uppercase ${hoverTextClass} ${activeSection === link.name ? activeTextClass : 'text-she-secondaryText'
                   }`}
               >
                 {link.name}
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
             {/* Hamburger Menu Toggle */}
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="xl:hidden p-2 rounded-lg text-white focus:outline-none"
+              className="xl:hidden p-2 rounded-lg text-she-primary focus:outline-none"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -134,14 +134,14 @@ const Navbar: React.FC = () => {
 
       {/* Side Drawer Navigation */}
       <div className={`fixed top-0 left-0 h-full w-[280px] bg-she-navbar z-[70] shadow-2xl transition-transform duration-500 ease-in-out xl:hidden flex flex-col ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <div className="p-6 flex items-center justify-between border-b border-white/10">
+        <div className="p-6 flex items-center justify-between border-b border-she-deepPurple/10">
           <div className="flex items-center gap-3">
             <div className={`w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm ${logoBgClass}`}>S</div>
-            <span className="font-black text-white uppercase tracking-tighter">She Leads</span>
+            <span className="font-black text-she-deepPurple uppercase tracking-tighter">She Leads</span>
           </div>
           <button
             onClick={() => setIsMenuOpen(false)}
-            className="p-2 text-slate-300 hover:text-white transition-colors"
+            className="p-2 text-she-secondaryText hover:text-she-primary transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -155,7 +155,7 @@ const Navbar: React.FC = () => {
               key={link.name}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className={`block px-4 py-4 text-xs font-black transition-all rounded-xl uppercase tracking-widest ${activeSection === link.name ? activeTextClass : 'text-slate-300'
+              className={`block px-4 py-4 text-xs font-black transition-all rounded-xl uppercase tracking-widest ${activeSection === link.name ? activeTextClass : 'text-she-secondaryText'
                 }`}
             >
               {link.name}

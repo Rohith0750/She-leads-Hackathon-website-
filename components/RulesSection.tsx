@@ -12,24 +12,24 @@ const RulesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-slate-50">
+    <section className="py-24 bg-she-background">
       <div className="max-w-4xl mx-auto px-4">
-        <div className="bg-white p-10 rounded-[3rem] border border-slate-200 shadow-xl">
-          <h2 className="text-3xl font-black mb-8 text-center flex items-center justify-center gap-3 text-she-blue uppercase tracking-tighter">
-             ⚖️ Guidelines
+        <div className="bg-she-card p-10 rounded-[3rem] border border-she-deepPurple/10 shadow-xl">
+          <h2 className="text-3xl font-black mb-8 text-center flex items-center justify-center gap-3 text-she-deepPurple uppercase tracking-tighter">
+            ⚖️ Guidelines
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {rules.map((rule, idx) => (
               <div key={idx} className="flex gap-4 items-start">
-                <div className="bg-she-blue text-white rounded-lg h-6 w-6 flex items-center justify-center flex-shrink-0 text-xs font-black mt-1">
+                <div className="bg-she-primary text-white rounded-lg h-6 w-6 flex items-center justify-center flex-shrink-0 text-xs font-black mt-1">
                   {idx + 1}
                 </div>
-                <p className="text-slate-600 text-sm font-semibold leading-relaxed">{rule}</p>
+                <p className="text-she-text text-sm font-semibold leading-relaxed">{rule}</p>
               </div>
             ))}
           </div>
-          <div className="mt-12 p-6 rounded-2xl bg-blue-50 border border-blue-100">
-            <p className="text-she-blue text-sm font-bold italic">
+          <div className="mt-12 p-6 rounded-2xl bg-she-primary/5 border border-she-primary/10">
+            <p className="text-she-primary text-sm font-bold italic">
               * By participating, you agree to our community standards and code of conduct.
             </p>
           </div>

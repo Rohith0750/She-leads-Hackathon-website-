@@ -86,7 +86,7 @@ const TechBackground: React.FC = () => {
             particles = [];
             const particleCount = Math.floor((canvas.width * canvas.height) / 12000); // Responsive density
 
-            const color = 'rgba(94, 139, 111, 0.6)'; // she-accent: #5E8B6F
+            const color = 'rgba(167, 139, 250, 0.6)'; // #A78BFA (Lavender)
 
             for (let i = 0; i < particleCount; i++) {
                 particles.push(new Particle(canvas.width, canvas.height, color));
@@ -95,7 +95,7 @@ const TechBackground: React.FC = () => {
 
         const render = () => {
             // Clear canvas with solid background color from palette
-            ctx.fillStyle = '#FFFFFF'; // she-background
+            ctx.fillStyle = '#FFFFFF'; // she-background (White)
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Update and Draw Particles
@@ -118,7 +118,7 @@ const TechBackground: React.FC = () => {
 
                         // Fading opacity based on distance
                         const opacity = (1 - distance / connectDistance) * connectionsOpacityMultiplier;
-                        ctx.strokeStyle = `rgba(94, 139, 111, ${opacity})`; // she-accent lines
+                        ctx.strokeStyle = `rgba(167, 139, 250, ${opacity})`; // #A78BFA (Lavender)
 
                         ctx.lineWidth = 0.5;
                         ctx.stroke();

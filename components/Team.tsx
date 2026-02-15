@@ -15,7 +15,7 @@ const Team: React.FC = () => {
             <div key={member.id} className="group">
               <div className="relative mb-4 overflow-hidden rounded-2xl aspect-[4/5]">
                 <img src={member.image} alt={member.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-she-navbar via-transparent to-transparent opacity-60"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-she-primary/20 via-transparent to-transparent opacity-60"></div>
               </div>
               <h3 className="text-xl font-bold text-she-text">{member.name}</h3>
               <p className="text-she-primary font-medium text-sm">{member.role}</p>

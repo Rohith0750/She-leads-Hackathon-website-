@@ -16,13 +16,13 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="relative">
-          <h1 className="text-[14vw] md:text-[12rem] font-black text-she-text leading-[0.8] tracking-tighter uppercase transition-colors duration-700">
+          <h1 className="text-[14vw] md:text-[12rem] font-black font-playfair text-she-text leading-[0.8] tracking-tighter uppercase transition-colors duration-700">
             She <br />
             <span className="text-she-primary">Leads</span>
             <span className="text-black ml-2 md:ml-4 transition-colors duration-700">2.0</span>
           </h1>
 
-          <div className="mt-8 md:mt-16 transform -rotate-1 bg-she-navbar px-6 md:px-12 py-3 md:py-6 inline-block shadow-xl border-2 md:border-4 border-white/20 rounded-[2rem] transition-all duration-700">
+          <div className="mt-8 md:mt-16 transform -rotate-1 bg-she-primary px-6 md:px-12 py-3 md:py-6 inline-block shadow-xl border-2 md:border-4 border-white/20 rounded-[2rem] transition-all duration-700">
             <span className="text-xl md:text-5xl font-black text-white italic tracking-tight uppercase">
               Innovate. Empower. Lead.
             </span>

@@ -40,11 +40,11 @@ const Tracks: React.FC = () => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setActiveTrack(null)}
           ></div>
-          <div className="relative w-full max-w-4xl bg-she-card border border-slate-200 rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
+          <div className="relative w-full max-w-4xl bg-she-card border border-she-deepPurple/10 rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
             {/* Close Button */}
             <button
               onClick={() => setActiveTrack(null)}
-              className="absolute top-4 right-4 p-2 rounded-full hover:bg-black/5 text-slate-400 hover:text-slate-900 transition-colors z-10"
+              className="absolute top-4 right-4 p-2 rounded-full hover:bg-black/5 text-she-secondaryText hover:text-she-primary transition-colors z-10"
             >
               <X size={24} />
             </button>
@@ -52,21 +52,21 @@ const Tracks: React.FC = () => {
             <div className="grid md:grid-cols-2">
               <div className={`p-8 md:p-12 ${bgGlowMap[TRACKS.find(t => t.id === activeTrack)?.themeColor || 'cyan']} flex items-center justify-center`}>
                 <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-6 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">
+                  <div className="w-32 h-32 mx-auto mb-6 text-she-deepPurple drop-shadow-sm">
                     {iconMap[TRACKS.find(t => t.id === activeTrack)?.iconName || 'sparkles']}
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tight mb-2">
+                  <h3 className="text-3xl md:text-4xl font-black text-she-deepPurple uppercase tracking-tight mb-2">
                     {TRACKS.find(t => t.id === activeTrack)?.title}
                   </h3>
-                  <div className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold tracking-widest uppercase">
+                  <div className="inline-block px-3 py-1 rounded-full bg-she-deepPurple/10 text-she-deepPurple text-xs font-bold tracking-widest uppercase">
                     Theme Track
                   </div>
                 </div>
               </div>
 
-              <div className="p-8 md:p-12 bg-she-navbar">
+              <div className="p-8 md:p-12 bg-white">
                 <h4 className="text-xl font-bold text-she-text mb-4 flex items-center gap-2">
-                  <Sparkles className="text-white" size={20} />
+                  <Sparkles className="text-she-primary" size={20} />
                   About this Track
                 </h4>
                 <p className="text-she-text mb-8 leading-relaxed font-medium">
@@ -74,13 +74,13 @@ const Tracks: React.FC = () => {
                 </p>
 
                 <h4 className="text-xl font-bold text-she-text mb-4 flex items-center gap-2">
-                  <CheckCircle2 className="text-white" size={20} />
+                  <CheckCircle2 className="text-she-primary" size={20} />
                   Sub-Tracks
                 </h4>
                 <ul className="space-y-3">
                   {TRACKS.find(t => t.id === activeTrack)?.subTracks.map((sub, idx) => (
                     <li key={idx} className="flex items-start gap-3 text-she-text font-medium">
-                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white shrink-0"></div>
+                      <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-she-primary shrink-0"></div>
                       <span>{sub}</span>
                     </li>
                   ))}
@@ -102,7 +102,7 @@ const Tracks: React.FC = () => {
           {TRACKS.map((track) => (
             <div
               key={track.id}
-              className={`group relative p-8 rounded-[2.5rem] bg-she-card border border-white/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${colorMap[track.themeColor]} flex flex-col h-full`}
+              className={`group relative p-8 rounded-[2.5rem] bg-she-card border border-she-deepPurple/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${colorMap[track.themeColor]} flex flex-col h-full`}
             >
               <div className="mb-6 w-16 h-16 p-3 rounded-2xl bg-she-background border border-black/5 group-hover:scale-110 transition-transform duration-500 group-hover:bg-white/50">
                 {iconMap[track.iconName]}
@@ -116,7 +116,7 @@ const Tracks: React.FC = () => {
                 {track.shortDescription}
               </p>
 
-              <div className="mt-auto pt-6 border-t border-slate-100">
+              <div className="mt-auto pt-6 border-t border-she-deepPurple/5">
                 <button
                   onClick={() => setActiveTrack(track.id)}
                   className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-she-text group-hover:text-she-primary transition-colors"

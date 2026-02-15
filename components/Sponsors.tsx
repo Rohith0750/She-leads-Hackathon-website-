@@ -20,7 +20,7 @@ const Sponsors: React.FC = () => {
               {SPONSORS.filter(s => s.tier === 'Platform Partner').map(s => (
                 <div key={s.id} className="relative group">
                   {/* Card Container */}
-                  <div className="relative bg-she-card border border-slate-200 rounded-2xl p-10 w-[400px] flex flex-col items-center justify-center shadow-xl transition-all hover:scale-105 duration-300">
+                  <div className="relative bg-she-card border border-she-deepPurple/10 rounded-2xl p-10 w-[400px] flex flex-col items-center justify-center shadow-xl transition-all hover:scale-105 duration-300">
 
                     {/* Corner Dots */}
                     <div className="absolute top-3 right-3 w-1.5 h-1.5 bg-she-accent rounded-full shadow-none transition-colors"></div>

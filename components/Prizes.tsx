@@ -49,11 +49,11 @@ const Prizes: React.FC = () => {
         {/* Total Prize Pool Header */}
         <div className="flex justify-center mb-16 md:mb-24">
           <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-she-navbar to-she-primary rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-she-deepPurple to-she-primary rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative px-10 py-6 bg-she-card ring-1 ring-black/5 rounded-2xl leading-none flex flex-col items-center">
-              <span className="text-she-navbar text-xs font-black tracking-[0.3em] uppercase mb-2">Total Prize Pool</span>
+              <span className="text-she-primary text-xs font-black tracking-[0.3em] uppercase mb-2">Total Prize Pool</span>
               <span className="text-4xl md:text-5xl font-black text-she-text">₹60,000</span>
-              <div className="h-1 w-16 bg-gradient-to-r from-she-navbar to-she-primary rounded-full mt-4"></div>
+              <div className="h-1 w-16 bg-gradient-to-r from-she-deepPurple to-she-primary rounded-full mt-4"></div>
             </div>
           </div>
         </div>
@@ -69,12 +69,12 @@ const Prizes: React.FC = () => {
               <div className={`absolute -inset-[1px] bg-gradient-to-b ${prize.color} rounded-[2rem] opacity-20 group-hover:opacity-100 blur-sm transition duration-500`}></div>
 
               {/* Card Content */}
-              <div className="relative h-full bg-she-card rounded-[2rem] p-8 flex flex-col items-center border border-slate-200 overflow-hidden shadow-2xl">
+              <div className="relative h-full bg-she-card rounded-[2rem] p-8 flex flex-col items-center border border-she-deepPurple/10 overflow-hidden shadow-2xl">
 
                 {/* Background Pattern (Subtle dots) */}
                 <div className="absolute inset-0 opacity-[0.03]"
                   style={{
-                    backgroundImage: 'radial-gradient(#64748b 1px, transparent 1px)',
+                    backgroundImage: 'radial-gradient(#A78BFA 1px, transparent 1px)',
                     backgroundSize: '20px 20px'
                   }}>
                 </div>
@@ -111,10 +111,10 @@ const Prizes: React.FC = () => {
                 </p>
 
                 {/* Footer / Divider */}
-                <div className="w-full mt-auto relative pt-6 border-t border-dashed border-slate-200">
+                <div className="w-full mt-auto relative pt-6 border-t border-dashed border-she-deepPurple/10">
                   <div className="flex items-center justify-center gap-2">
                     <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${prize.color}`}></div>
-                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Winner Takes All</span>
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-she-secondaryText">Winner Takes All</span>
                     <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${prize.color}`}></div>
                   </div>
                 </div>
@@ -128,10 +128,10 @@ const Prizes: React.FC = () => {
 
         {/* Additional Quote */}
         <div className="text-center mt-20">
-          <div className="flex items-center justify-center gap-4 text-slate-400 text-xs font-bold uppercase tracking-[0.3em]">
-            <span className="w-8 h-[1px] bg-slate-400"></span>
+          <div className="flex items-center justify-center gap-4 text-she-secondaryText text-xs font-bold uppercase tracking-[0.3em]">
+            <span className="w-8 h-[1px] bg-she-secondaryText"></span>
             <span>May the best team win!</span>
-            <span className="w-8 h-[1px] bg-slate-400"></span>
+            <span className="w-8 h-[1px] bg-she-secondaryText"></span>
           </div>
         </div>
       </div>

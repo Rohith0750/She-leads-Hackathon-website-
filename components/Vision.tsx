@@ -3,24 +3,23 @@ import React from 'react';
 const Vision: React.FC = () => {
   const visionPoints = [
     {
-      title: "Innovate",
       subtitle: "The Power of Creation",
       description: "Inspiring women changemakers to build impactful real-world tech solutions. We don't just write code; we architect solutions for tomorrow's challenges.",
-      color: "from-she-blue to-blue-400",
+      color: "from-she-primary to-she-accent",
       delay: "0"
     },
     {
       title: "Empower",
       subtitle: "The Strength of Growth",
       description: "Helping women confidently innovate, lead, and grow in tech careers. We provide the mentorship, network, and tools necessary to break glass ceilings.",
-      color: "from-purple-500 to-she-blue",
+      color: "from-she-deepPurple to-she-primary",
       delay: "100"
     },
     {
       title: "Lead",
       subtitle: "The Future of Impact",
       description: "Building an inclusive ecosystem with creativity, leadership, and equal opportunities. Our vision is a world where tech leadership is diverse by default.",
-      color: "from-she-neon to-green-400",
+      color: "from-she-accent to-she-lavender",
       delay: "200"
     }
   ];
@@ -41,7 +40,7 @@ const Vision: React.FC = () => {
             </div>
             <h2 className="text-5xl md:text-7xl font-black text-she-text mb-8 tracking-tighter uppercase leading-[0.9]">
               The <br />
-              <span className="text-she-navbar">Vision</span> <br />
+              <span className="text-she-primary">Vision</span> <br />
               Beyond <br />
               The <span className="text-she-primary">Code</span>
             </h2>
@@ -49,7 +48,7 @@ const Vision: React.FC = () => {
               We're not just hosting a hackathon. We're igniting a movement that reshapes the technological landscape through female-led innovation.
             </p>
             <div className="mt-10 flex items-center gap-4">
-              <div className="w-12 h-[2px] bg-she-navbar"></div>
+              <div className="w-12 h-[2px] bg-she-primary"></div>
               <span className="text-xs font-black uppercase tracking-[0.2em] text-she-text/50">She Leads 2026</span>
             </div>
           </div>
@@ -61,7 +60,7 @@ const Vision: React.FC = () => {
                 key={point.title}
                 className="group relative p-[1px] rounded-3xl transition-all duration-500 hover:scale-[1.01]"
               >
-                <div className="relative p-10 bg-she-card border border-slate-200 rounded-3xl overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-slate-200/50">
+                <div className="relative p-10 bg-she-card border border-she-deepPurple/10 rounded-3xl overflow-hidden transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-she-deepPurple/10">
                   {/* Number Watermark */}
                   <div className="absolute top-0 right-0 p-8 opacity-5 font-black text-8xl text-she-text pointer-events-none font-sans group-hover:opacity-10 transition-opacity">
                     0{index + 1}

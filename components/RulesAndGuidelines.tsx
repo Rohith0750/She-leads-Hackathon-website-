@@ -373,8 +373,8 @@ const RulesAndGuidelines: React.FC = () => {
                         <div
                             key={rule.id}
                             className={`group bg-she-card border transition-all duration-300 rounded-2xl overflow-hidden ${openIdx === idx
-                                ? 'border-she-navbar shadow-lg ring-1 ring-she-navbar/20'
-                                : 'border-slate-200 hover:border-she-navbar'
+                                ? 'border-she-primary shadow-lg ring-1 ring-she-primary/20'
+                                : 'border-she-deepPurple/10 hover:border-she-primary'
                                 }`}
                         >
                             <button
@@ -383,16 +383,16 @@ const RulesAndGuidelines: React.FC = () => {
                                 aria-expanded={openIdx === idx}
                             >
                                 <div className="flex items-center gap-4">
-                                    <span className={`text-lg md:text-xl font-bold tracking-tight transition-colors duration-300 ${openIdx === idx ? 'text-she-navbar' : 'text-she-text group-hover:text-she-navbar'
+                                    <span className={`text-lg md:text-xl font-bold tracking-tight transition-colors duration-300 ${openIdx === idx ? 'text-she-primary' : 'text-she-text group-hover:text-she-primary'
                                         }`}>
                                         {rule.title}
                                     </span>
                                 </div>
 
-                                <div className={`relative w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 ${openIdx === idx ? 'bg-she-navbar/20 rotate-45' : 'bg-slate-100 group-hover:bg-she-navbar/10'
+                                <div className={`relative w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 ${openIdx === idx ? 'bg-she-primary/10 rotate-45' : 'bg-she-primary/5 group-hover:bg-she-primary/10'
                                     }`}>
                                     <svg
-                                        className={`w-4 h-4 transition-colors duration-300 ${openIdx === idx ? 'text-she-navbar' : 'text-slate-400 group-hover:text-she-navbar'}`}
+                                        className={`w-4 h-4 transition-colors duration-300 ${openIdx === idx ? 'text-she-primary' : 'text-she-secondaryText group-hover:text-she-primary'}`}
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -409,7 +409,7 @@ const RulesAndGuidelines: React.FC = () => {
                             >
                                 <div className="overflow-hidden">
                                     <div className="px-6 pb-6 md:px-8 md:pb-8 pt-0">
-                                        <div className="h-px w-full bg-slate-100 mb-6"></div>
+                                        <div className="h-px w-full bg-she-deepPurple/5 mb-6"></div>
                                         <div className="text-she-text/80 text-base md:text-lg font-medium leading-relaxed">
                                             {rule.content}
                                         </div>
