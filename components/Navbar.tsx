@@ -73,11 +73,11 @@ const Navbar: React.FC = () => {
         <div className="max-w-[1440px] mx-auto px-4 flex items-center justify-between relative">
 
           {/* Logo Section */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1">
             <img src={sheLeadsLogo} alt="She Leads Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-sm" />
             <div className="flex flex-col">
               <span className="text-lg md:text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
-                SHELEADS2.0
+                HELEADS2.0
               </span>
               <span className="font-mono text-xs tracking-widest mt-0.5 transition-colors duration-700 text-she-primary">
                 2026
