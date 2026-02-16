@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
 
   const bgColorClass = scrolled
     ? 'bg-she-navbar/95 backdrop-blur-md shadow-2xl py-2'
-    : 'bg-she-navbar py-4';
+    : 'bg-she-navbar py-2';
 
   const logoBgClass = 'bg-she-primary text-white';
   const hoverTextClass = 'hover:text-she-primary';
@@ -74,12 +74,12 @@ const Navbar: React.FC = () => {
 
           {/* Logo Section */}
           <div className="flex items-center gap-3">
-            <img src={sheLeadsLogo} alt="She Leads Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain bg-white rounded-full p-1 shadow-sm" />
+            <img src={sheLeadsLogo} alt="She Leads Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-sm" />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
+              <span className="text-lg md:text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
                 SHELEADS2.0
               </span>
-              <span className="font-mono text-sm tracking-widest mt-0.5 transition-colors duration-700 text-she-primary">
+              <span className="font-mono text-xs tracking-widest mt-0.5 transition-colors duration-700 text-she-primary">
                 2026
               </span>
             </div>
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`px-4 py-2 text-[12px] font-black transition-all duration-300 tracking-widest rounded-full uppercase ${hoverTextClass} ${activeSection === link.name ? activeTextClass : 'text-she-secondaryText'
+                className={`px-3 py-1.5 text-[11px] font-black transition-all duration-300 tracking-widest rounded-full uppercase ${hoverTextClass} ${activeSection === link.name ? activeTextClass : 'text-she-secondaryText'
                   }`}
               >
                 {link.name}
