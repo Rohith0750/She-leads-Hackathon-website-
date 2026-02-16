@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
             <img src={sheLeadsLogo} alt="She Leads Logo" className="w-12 h-12 md:w-14 md:h-14 object-contain bg-white rounded-full p-1 shadow-sm" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
-                She Leads
+                SHELEADS 2.0
               </span>
               <span className="font-mono text-sm tracking-widest mt-0.5 transition-colors duration-700 text-she-primary">
                 2026
@@ -136,7 +136,7 @@ const Navbar: React.FC = () => {
         <div className="p-6 flex items-center justify-between border-b border-she-deepPurple/10">
           <div className="flex items-center gap-3">
             <img src={sheLeadsLogo} alt="She Leads Logo" className="w-10 h-10 object-contain bg-white rounded-lg p-1" />
-            <span className="font-black text-she-deepPurple uppercase tracking-tighter">She Leads</span>
+            <span className="font-black text-she-deepPurple uppercase tracking-tighter">SheLeads 2.0</span>
           </div>
           <button
             onClick={() => setIsMenuOpen(false)}
