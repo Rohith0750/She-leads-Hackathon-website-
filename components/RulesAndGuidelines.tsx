@@ -354,7 +354,7 @@ const RulesAndGuidelines: React.FC = () => {
     ];
 
     return (
-        <section id="rules" className="py-24 md:py-32 bg-she-background transition-colors duration-700">
+        <section id="rules" className="py-24 md:py-32 transition-colors duration-700">
             <div className="max-w-4xl mx-auto px-4">
                 <div className="text-center mb-16">
                     <div className="flex items-center justify-center gap-3 mb-4">

@@ -4,7 +4,7 @@ import { TEAM } from '../constants';
 
 const Team: React.FC = () => {
   return (
-    <section id="team" className="py-24 bg-she-background">
+    <section id="team" className="py-24">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-she-text">The Organizing Team</h2>

@@ -3,7 +3,7 @@ import { SPONSORS } from '../constants';
 
 const Sponsors: React.FC = () => {
   return (
-    <section id="sponsors" className="py-24 bg-she-background relative overflow-hidden transition-colors duration-700">
+    <section id="sponsors" className="py-24 relative overflow-hidden transition-colors duration-700">
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">

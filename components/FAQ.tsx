@@ -10,7 +10,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 md:py-32 bg-she-background transition-colors duration-700">
+    <section id="faq" className="py-24 md:py-32 transition-colors duration-700">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-black text-she-text mb-16 text-center uppercase tracking-tighter">
           Frequently Answered <span className="text-she-navbar">Questions</span>

@@ -20,7 +20,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className={`min-h-screen bg-she-background text-she-text`}>
+    <div className={`min-h-screen text-she-text`}>
       <TechBackground />
       <Navbar />
       <Hero />
