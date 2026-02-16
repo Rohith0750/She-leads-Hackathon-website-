@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import pptFile from '../assets/SheLeads_2.0_ppt_template.pdf';
+import sheLeadsLogo from '../assets/logo_sheleads.png';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -73,9 +74,7 @@ const Navbar: React.FC = () => {
 
           {/* Logo Section */}
           <div className="flex items-center gap-3">
-            <div className={`w-10 h-10 rounded-2xl flex items-center justify-center font-black text-xl transition-colors duration-700 shadow-md ${logoBgClass}`}>
-              S
-            </div>
+            <img src={sheLeadsLogo} alt="She Leads Logo" className="w-12 h-12 md:w-14 md:h-14 object-contain bg-white rounded-full p-1 shadow-sm" />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
                 She Leads
@@ -136,7 +135,7 @@ const Navbar: React.FC = () => {
       <div className={`fixed top-0 left-0 h-full w-[280px] bg-she-navbar z-[70] shadow-2xl transition-transform duration-500 ease-in-out xl:hidden flex flex-col ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-6 flex items-center justify-between border-b border-she-deepPurple/10">
           <div className="flex items-center gap-3">
-            <div className={`w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm ${logoBgClass}`}>S</div>
+            <img src={sheLeadsLogo} alt="She Leads Logo" className="w-10 h-10 object-contain bg-white rounded-lg p-1" />
             <span className="font-black text-she-deepPurple uppercase tracking-tighter">She Leads</span>
           </div>
           <button

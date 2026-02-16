@@ -1,5 +1,6 @@
 import React from 'react';
-import { Rocket, Globe, Code2 } from 'lucide-react';
+import { Rocket, Globe } from 'lucide-react';
+import sheLeadsLogo from '../assets/logo_sheleads.png';
 
 const About: React.FC = () => {
   return (
@@ -38,7 +39,7 @@ const About: React.FC = () => {
             <div className="absolute -inset-4 bg-she-accent/20 rounded-[4rem] blur-2xl group-hover:bg-she-accent/30 transition-all"></div>
             <div className="relative aspect-[4/5] rounded-[2rem] md:rounded-[3.5rem] overflow-hidden border-4 md:border-8 border-white shadow-2xl bg-gradient-to-br from-she-accent/20 via-she-primary to-she-primary/20">
               <div className="absolute inset-0 flex items-center justify-center">
-                <Code2 className="w-32 h-32 md:w-48 md:h-48 text-white opacity-90 drop-shadow-2xl" strokeWidth={1.5} />
+                <img src={sheLeadsLogo} alt="She Leads Logo" className="w-48 h-48 md:w-80 md:h-80 object-contain drop-shadow-2xl bg-white rounded-3xl p-6" />
               </div>
             </div>
             <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 p-6 md:p-10 bg-she-primary rounded-[2rem] md:rounded-[2.5rem] shadow-2xl transform rotate-2">

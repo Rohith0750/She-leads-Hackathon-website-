@@ -1,4 +1,5 @@
 import React from 'react';
+import sheLeadsLogo from '../assets/logo_sheleads.png';
 
 const Footer: React.FC = () => {
   return (
@@ -35,7 +36,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-              <div className="w-10 h-10 rounded-2xl bg-she-primary flex items-center justify-center text-white font-black text-xl shadow-lg">S</div>
+              <img src={sheLeadsLogo} alt="She Leads Logo" className="w-20 h-20 object-contain" />
               <span className="text-2xl font-black text-white tracking-tighter uppercase">
                 She Leads <span className="text-she-accent">2.0</span>
               </span>
