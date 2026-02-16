@@ -3,6 +3,7 @@ import React from 'react';
 const Vision: React.FC = () => {
   const visionPoints = [
     {
+      title: "Innovate",
       subtitle: "The Power of Creation",
       description: "Inspiring women changemakers to build impactful real-world tech solutions. We don't just write code; we architect solutions for tomorrow's challenges.",
       color: "from-she-primary to-she-accent",

@@ -4,7 +4,7 @@ import sheLeadsLogo from '../assets/logo_sheleads.png';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 md:py-32 bg-white/50 backdrop-blur-sm">
+    <section id="about" className="py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div>
@@ -35,17 +35,12 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="relative group mt-12 md:mt-0">
-            <div className="absolute -inset-4 bg-she-accent/20 rounded-[4rem] blur-2xl group-hover:bg-she-accent/30 transition-all"></div>
-            <div className="relative aspect-[4/5] rounded-[2rem] md:rounded-[3.5rem] overflow-hidden border-4 md:border-8 border-white shadow-2xl bg-gradient-to-br from-she-accent/20 via-she-primary to-she-primary/20">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <img src={sheLeadsLogo} alt="She Leads Logo" className="w-48 h-48 md:w-80 md:h-80 object-contain drop-shadow-2xl bg-white rounded-3xl p-6" />
-              </div>
-            </div>
-            <div className="absolute -bottom-6 md:-bottom-8 -right-4 md:-right-8 p-6 md:p-10 bg-she-primary rounded-[2rem] md:rounded-[2.5rem] shadow-2xl transform rotate-2">
-              <div className="text-3xl md:text-5xl font-black text-white mb-1 tracking-tighter">5-6</div>
-              <div className="text-white/80 font-bold uppercase tracking-widest text-xs md:text-base whitespace-nowrap">MARCH 2026</div>
-            </div>
+          <div className="relative group mt-12 md:mt-0 flex justify-center">
+            <img
+              src={sheLeadsLogo}
+              alt="She Leads Logo"
+              className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
+            />
           </div>
         </div>
       </div>
