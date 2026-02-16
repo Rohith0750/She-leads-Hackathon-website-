@@ -12,14 +12,14 @@ const About: React.FC = () => {
               Empowerment Through Code
             </div>
             <h2 className="text-4xl md:text-6xl font-black text-she-text mb-6 md:mb-8 tracking-tighter uppercase">
-              What is <span className="text-she-primary">She Leads 2.0?</span>
+              What is <span className="text-she-primary normal-case">SheLeads 2.0?</span>
             </h2>
             <div className="space-y-6 text-she-text/80 text-lg md:text-xl leading-relaxed font-medium">
               <p>
                 SheLeads 2.0 is more than a hackathon, it’s a platform where women innovate, lead, and build technology with purpose. In 24 hours, ideas turn into solutions, learners become leaders, and future women changemakers rise.
               </p>
               <p>
-                We aim to create an inclusive tech ecosystem where every woman is empowered to innovate, lead, and shape the future through technology.
+                As a women-led hackathon, each team is guided by a woman leader, while participants of all genders collaborate to create meaningful impact. We aim to foster an inclusive tech ecosystem where women confidently take the lead in shaping the future through technology.
               </p>
             </div>
             <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">

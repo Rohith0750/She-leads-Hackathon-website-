@@ -17,11 +17,9 @@ const RulesAndGuidelines: React.FC = () => {
             content: (
                 <div className="space-y-4">
                     <p>
-                        SheLeads 2.0 is a 24-hour national-level women-centric hackathon designed to empower women innovators to build technology-driven solutions for real-world societal challenges.
+                        SheLeads 2.0 is a 24-hour national-level women-led hackathon designed to empower women innovators to take the lead in building technology-driven solutions for real-world societal challenges.In this hackathon, each team must be led by a woman, while members of any gender are welcome to participate. The event focuses on fostering leadership, creativity, collaboration, and rapid prototyping in an inclusive environment. Participants will work in teams to ideate, build, and present impactful solutions across multiple social-impact technology tracks, evaluated by expert mentors and jury members from industry and academia.
                     </p>
-                    <p>
-                        The hackathon focuses on fostering leadership, creativity, collaboration, and rapid prototyping in an inclusive environment. Participants will work in teams to ideate, build, and present impactful solutions across multiple social-impact technology tracks, evaluated by expert mentors and jury members from industry and academia.
-                    </p>
+
                 </div>
             )
         },
@@ -340,7 +338,7 @@ const RulesAndGuidelines: React.FC = () => {
                         <ul className="list-disc pl-5 space-y-1 text-sm">
                             <li>The event schedule, rules, logistics are subject to change at discretion of organizers.</li>
                             <li>All official communication will be sent through email and WhatsApp only.</li>
-                            <li>By registering, each participant agrees to abide by all terms listed in this handbook.</li>
+                            <li>By registering, each participant agrees to abide by all terms listed in the rulebook.</li>
                         </ul>
                     </div>
 
@@ -365,7 +363,7 @@ const RulesAndGuidelines: React.FC = () => {
                     <h2 className="text-4xl md:text-5xl font-black text-she-text mb-4 tracking-tighter uppercase">
                         RULES & GUIDELINES
                     </h2>
-                    <p className="text-she-text/70 text-lg font-medium">Everything you need to know to participate in Nexovate 2026</p>
+                    <p className="text-she-text/70 text-lg font-medium">Everything you need to know to participate in SheLeads 2.0</p>
                 </div>
 
                 <div className="space-y-4">
