@@ -38,7 +38,7 @@ const About: React.FC = () => {
           <div className="relative group mt-12 md:mt-0 flex justify-center">
             <img
               src={sheLeadsLogo}
-              alt="She Leads Logo"
+              alt="SheLeads 2.0 Logo"
               className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
             />
           </div>

@@ -87,7 +87,7 @@ const RulesAndGuidelines: React.FC = () => {
             title: '04 — Tracks',
             content: (
                 <div className="space-y-8">
-                    <p className="font-medium">She Leads 2.0 includes the following 5 social-impact technology tracks:</p>
+                    <p className="font-medium">SheLeads 2.0 includes the following 5 social-impact technology tracks:</p>
 
                     <div>
                         <h4 className="font-bold text-lg text-she-primary">I. EmpowerAbility</h4>
@@ -291,7 +291,7 @@ const RulesAndGuidelines: React.FC = () => {
             title: '10 — Code of Conduct & Disqualification',
             content: (
                 <div className="space-y-6">
-                    <p>SHELEADS 2.0 is committed to providing a respectful, safe, and fair environment for all.</p>
+                    <p>SheLeads 2.0 is committed to providing a respectful, safe, and fair environment for all.</p>
                     <div>
                         <h4 className="font-bold text-lg mb-2 text-she-primary">Expected Behaviour</h4>
                         <ul className="list-disc pl-5 space-y-1">

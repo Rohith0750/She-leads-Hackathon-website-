@@ -26,6 +26,7 @@ const App: React.FC = () => {
       <Hero />
       <About />
       <Vision />
+      <ChiefGuestProfile />
       <Tracks />
       <RulesAndGuidelines />
       <div id="timeline">
