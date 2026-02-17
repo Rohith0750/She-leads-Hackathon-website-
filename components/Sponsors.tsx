@@ -1,4 +1,5 @@
 import React from 'react';
+import unstopLogo from '../assets/unstop.svg';
 import { SPONSORS } from '../constants';
 
 const Sponsors: React.FC = () => {
@@ -27,9 +28,13 @@ const Sponsors: React.FC = () => {
                     <div className="absolute bottom-3 left-3 w-1.5 h-1.5 bg-she-accent rounded-full shadow-none transition-colors"></div>
 
                     {/* Logo/Name */}
-                    <h4 className="text-3xl font-bold text-she-text mb-3 tracking-widest uppercase drop-shadow-sm transition-colors">
-                      {s.name}
-                    </h4>
+                    {s.name === 'UNSTOP' ? (
+                      <img src={unstopLogo} alt="Unstop Logo" className="h-16 w-auto mb-3 drop-shadow-sm transition-all hover:scale-105" />
+                    ) : (
+                      <h4 className="text-3xl font-bold text-she-text mb-3 tracking-widest uppercase drop-shadow-sm transition-colors">
+                        {s.name}
+                      </h4>
+                    )}
 
                     {/* Description */}
                     {s.description && (
