@@ -1,6 +1,6 @@
 
 import React from 'react';
-import pptFile from '../assets/SheLeads_2.0_ppt_template.pdf';
+import pptFile from '../assets/SheLeads_2.0_ppt_template.pptx';
 
 const Hero: React.FC = () => {
   return (
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
 
           <a
             href={pptFile}
-            download="SheLeads_2.0_ppt_Template.pdf"
+            download="SheLeads_2.0_ppt_Template.pptx"
             className="w-full sm:w-auto px-10 md:px-14 py-4 md:py-6 bg-white text-she-primary border-4 border-she-primary/20 hover:border-she-primary hover:bg-she-primary/5 hover:scale-105 active:scale-95 rounded-full font-black text-lg md:text-2xl transition-all shadow-xl shadow-she-primary/10 uppercase tracking-tighter flex items-center justify-center gap-3"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">

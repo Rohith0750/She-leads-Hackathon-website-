@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import pptFile from '../assets/SheLeads_2.0_ppt_template.pdf';
+import pptFile from '../assets/SheLeads_2.0_ppt_template.pptx';
 import sheLeadsLogo from '../assets/logo_sheleads.png';
 
 const Navbar: React.FC = () => {
@@ -73,11 +73,11 @@ const Navbar: React.FC = () => {
         <div className="max-w-[1440px] mx-auto px-4 flex items-center justify-between relative">
 
           {/* Logo Section */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-3">
             <img src={sheLeadsLogo} alt="She Leads Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-sm" />
             <div className="flex flex-col">
               <span className="text-lg md:text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
-                HELEADS2.0
+                SHELEADS2.0
               </span>
               <span className="font-mono text-xs tracking-widest mt-0.5 transition-colors duration-700 text-she-primary">
                 2026
@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
 
             <a
               href={pptFile}
-              download="SheLeads_2.0_ppt_Template.pdf"
+              download="SheLeads_2.0_ppt_Template.pptx"
               className={`hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg uppercase tracking-tighter hover:scale-105 active:scale-95 bg-she-primary text-white shadow-she-primary/20`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -165,7 +165,7 @@ const Navbar: React.FC = () => {
         <div className="p-6 border-t border-white/10">
           <a
             href={pptFile}
-            download="SheLeads_2.0_ppt_Template.pdf"
+            download="SheLeads_2.0_ppt_Template.pptx"
             className={`w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold transition-all shadow-lg uppercase tracking-tighter bg-she-primary text-white shadow-she-primary/20`}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
