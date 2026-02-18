@@ -102,10 +102,20 @@ const Navbar: React.FC = () => {
           {/* Actions */}
           <div className="flex items-center gap-2 md:gap-4">
 
+            {/* Apply Now Button */}
+            <a
+              href="https://unstop.com/hackathons/sheleads-20-presideny-university-bangalore-1642567"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg uppercase tracking-tighter hover:scale-105 active:scale-95 bg-she-primary text-white shadow-she-primary/20"
+            >
+              APPLY NOW
+            </a>
+
             <a
               href={pptFile}
               download="SheLeads_2.0_ppt_Template.pptx"
-              className={`hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg uppercase tracking-tighter hover:scale-105 active:scale-95 bg-she-primary text-white shadow-she-primary/20`}
+              className={`hidden sm:flex items-center gap-2 px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg uppercase tracking-tighter hover:scale-105 active:scale-95 bg-white text-she-primary border-2 border-she-primary/20 hover:border-she-primary hover:bg-she-primary/5 shadow-she-primary/10`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -162,11 +172,20 @@ const Navbar: React.FC = () => {
           ))}
         </div>
 
-        <div className="p-6 border-t border-white/10">
+        <div className="p-6 border-t border-white/10 space-y-4">
+          <a
+            href="https://unstop.com/hackathons/sheleads-20-presideny-university-bangalore-1642567"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold transition-all shadow-lg uppercase tracking-tighter bg-she-primary text-white shadow-she-primary/20"
+          >
+            APPLY NOW
+          </a>
+
           <a
             href={pptFile}
             download="SheLeads_2.0_ppt_Template.pptx"
-            className={`w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold transition-all shadow-lg uppercase tracking-tighter bg-she-primary text-white shadow-she-primary/20`}
+            className={`w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-bold transition-all shadow-lg uppercase tracking-tighter bg-white text-she-primary border-2 border-she-primary/20 hover:border-she-primary hover:bg-she-primary/5 shadow-she-primary/10`}
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

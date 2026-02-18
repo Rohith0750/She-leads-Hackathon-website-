@@ -31,9 +31,14 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="mt-12 md:mt-24 flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-10">
-          <button className="w-full sm:w-auto px-10 md:px-14 py-4 md:py-6 bg-she-primary hover:bg-she-primaryHover hover:scale-105 active:scale-95 text-white rounded-full font-black text-lg md:text-2xl transition-all shadow-xl shadow-she-primary/30 uppercase tracking-tighter">
+          <a
+            href="https://unstop.com/hackathons/sheleads-20-presideny-university-bangalore-1642567"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-10 md:px-14 py-4 md:py-6 bg-she-primary hover:bg-she-primaryHover hover:scale-105 active:scale-95 text-white rounded-full font-black text-lg md:text-2xl transition-all shadow-xl shadow-she-primary/30 uppercase tracking-tighter inline-block text-center"
+          >
             APPLY NOW
-          </button>
+          </a>
 
           <a
             href={pptFile}

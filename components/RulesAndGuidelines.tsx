@@ -29,7 +29,7 @@ const RulesAndGuidelines: React.FC = () => {
             content: (
                 <div className="space-y-6">
                     <ul className="list-disc pl-5 space-y-2">
-                        <li>Teams must consist of 2-4 members.</li>
+                        <li>Teams must consist of exactly 4 members.</li>
                         <li>The hackathon is open for national-level participation, including Presidency University students.</li>
                         <li>Cross-institution and interdisciplinary teams are allowed and encouraged.</li>
                         <li>Each participant can be a part of only one team.</li>

@@ -105,7 +105,7 @@ export const PRIZES: Prize[] = [
 export const FAQS: FAQItem[] = [
   { id: 1, question: 'Who can participate?', answer: 'Only UG (Undergraduate) students are eligible to participate.' },
   { id: 2, question: 'Is there any fee?', answer: 'Yes, the fee is ₹800 per team for shortlisted teams only.' },
-  { id: 3, question: 'How do teams work?', answer: 'Teams must consist of 2–4 members. Each team must be led by a woman, while the remaining members may be of any gender. Interdisciplinary and cross-institutional teams are encouraged.' },
+  { id: 3, question: 'How do teams work?', answer: 'Teams must consist of exactly 4 members. Each team must be led by a woman, while the remaining members may be of any gender. Interdisciplinary and cross-institutional teams are encouraged.' },
   { id: 4, question: 'What is the event format?', answer: 'It is a 24-hour offline hackathon.' },
   { id: 5, question: 'Where is the venue?', answer: 'Venue details: Presidency University.' },
 ];
