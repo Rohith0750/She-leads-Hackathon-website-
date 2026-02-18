@@ -1,25 +1,44 @@
 
 import React from 'react';
+import chiefGuestImage from '../assets/chief-guest/dr-nafeesa-ahmed.jpeg';
 
 const ChiefGuestProfile: React.FC = () => {
   return (
-    <section className="py-24">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative glass p-1 rounded-3xl overflow-hidden shadow-2xl">
-          <div className="bg-she-card rounded-[calc(1.5rem-1px)] p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 border border-she-deepPurple/10">
-            <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-2xl overflow-hidden border-4 border-she-primary/20">
-              <img src="https://picsum.photos/400/400?random=30" alt="Chief Guest" className="w-full h-full object-cover" />
-            </div>
-            <div>
-              <div className="inline-block mb-3 text-she-primary font-bold uppercase tracking-widest text-xs">Chief Guest Speaker</div>
-              <h2 className="text-4xl font-bold mb-4 text-she-deepPurple">Dr. Aris Thorne</h2>
-              <p className="text-xl text-she-text mb-6 italic">"The future isn't predicted, it's compiled by those who dare to build."</p>
-              <div className="text-she-secondaryText mb-8 space-y-4">
-                <p>Formerly the Chief Architect at QuantumStream, Dr. Thorne has spent two decades pioneering decentralized systems and neural computing. They will be delivering the opening keynote on 'The Ethical Frontier of AI'.</p>
+    <section className="py-24" id="chief-guest">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 md:mb-10">
+          <h2 className="text-3xl md:text-5xl font-black text-she-deepPurple tracking-tight uppercase">Inaugural Speaker</h2>
+        </div>
+
+        <div className="bg-she-card rounded-[2rem] p-6 md:p-8 border border-she-primary/10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8">
+            <div className="lg:col-span-4 bg-white/40 rounded-3xl p-6 md:p-8 border border-white/40">
+              <div className="rounded-2xl overflow-hidden border border-white/50 mb-6">
+                <img
+                  src={chiefGuestImage}
+                  alt="Dr. Nafeesa Ahmed"
+                  className="w-full h-[280px] md:h-[360px] object-cover"
+                />
               </div>
-              <div className="flex gap-4">
-                <span className="px-3 py-1 bg-she-deepPurple rounded-lg text-sm text-white">OpenAI Research</span>
-                <span className="px-3 py-1 bg-she-deepPurple rounded-lg text-sm text-white">PhD MIT</span>
+              <h2 className="text-3xl md:text-4xl font-black text-she-deepPurple uppercase tracking-tight">Dr. Nafeesa Ahmed</h2>
+              <p className="mt-2 text-she-text text-base md:text-xl leading-tight">Director, Presidency Group of Institutions</p>
+            </div>
+
+            <div className="lg:col-span-8 bg-white/35 rounded-3xl p-6 md:p-8 border border-white/50">
+              <div className="text-she-text/90 text-lg md:text-2xl leading-loose space-y-10">
+                <p>
+                 Dr. Nafeesa Ahmed is the Director of the Presidency Group of Institutions, Bengaluru, and a recognized leader in education management. 
+                 She holds a Master’s degree in International Management from Royal Holloway, University of London, 
+                 and has completed the School Leadership and Management program from Harvard Business School Online.
+                </p>
+                <p>
+                  With over a decade of experience in institutional leadership, she has championed innovation, inclusive education, and forward-looking academic models.
+                  She has been recognized for her contributions to education with national awards, including the Economic Times Power Icon Award.
+                </p>
+                <p>
+                  She will inaugurate SheLeads 2.0 and deliver the opening address
+                </p>
+            
               </div>
             </div>
           </div>

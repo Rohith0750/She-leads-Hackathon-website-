@@ -50,7 +50,7 @@ const Vision: React.FC = () => {
             </p>
             <div className="mt-10 flex items-center gap-4">
               <div className="w-12 h-[2px] bg-she-primary"></div>
-              <span className="text-xs font-black uppercase tracking-[0.2em] text-she-text/50">She Leads 2026</span>
+              <span className="text-xs font-black tracking-[0.2em] text-she-text/50">SheLeads 2.0 · 2026</span>
             </div>
           </div>
 

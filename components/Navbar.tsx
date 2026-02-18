@@ -74,10 +74,10 @@ const Navbar: React.FC = () => {
 
           {/* Logo Section */}
           <div className="flex items-center gap-3">
-            <img src={sheLeadsLogo} alt="She Leads Logo" className="w-12 h-12 md:w-16 md:h-16 object-contain bg-white rounded-full p-1 shadow-sm" />
+            <img src={sheLeadsLogo} alt="SheLeads 2.0 Logo" className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full p-0 scale-[1.18]" />
             <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700 uppercase">
-                SHELEADS2.0
+              <span className="text-lg md:text-xl font-bold text-she-text tracking-wide leading-none transition-colors duration-700">
+                SheLeads 2.0
               </span>
               <span className="font-mono text-xs tracking-widest mt-0.5 transition-colors duration-700 text-she-primary">
                 2026
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`px-3 py-1.5 text-[11px] font-black transition-all duration-300 tracking-widest rounded-full uppercase ${hoverTextClass} ${activeSection === link.name ? activeTextClass : 'text-she-secondaryText'
+                className={`px-3 py-1.5 text-xs font-black transition-all duration-300 tracking-widest rounded-full uppercase ${hoverTextClass} ${activeSection === link.name ? activeTextClass : 'text-she-secondaryText'
                   }`}
               >
                 {link.name}
@@ -145,8 +145,8 @@ const Navbar: React.FC = () => {
       <div className={`fixed top-0 left-0 h-full w-[280px] bg-she-navbar z-[70] shadow-2xl transition-transform duration-500 ease-in-out xl:hidden flex flex-col ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-6 flex items-center justify-between border-b border-she-deepPurple/10">
           <div className="flex items-center gap-3">
-            <img src={sheLeadsLogo} alt="She Leads Logo" className="w-10 h-10 object-contain bg-white rounded-lg p-1" />
-            <span className="font-black text-she-deepPurple uppercase tracking-tighter">SheLeads 2.0</span>
+            <img src={sheLeadsLogo} alt="SheLeads 2.0 Logo" className="w-14 h-14 object-cover rounded-lg p-0" />
+            <span className="font-black text-she-deepPurple tracking-tighter">SheLeads 2.0</span>
           </div>
           <button
             onClick={() => setIsMenuOpen(false)}

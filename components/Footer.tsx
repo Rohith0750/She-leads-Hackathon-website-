@@ -18,13 +18,13 @@ const Footer: React.FC = () => {
 
               <a
                 href="mailto:harvest-club@presidencyuniversity.in"
-                className="inline-flex items-center gap-3 bg-she-primary hover:bg-she-primaryHover text-white px-8 py-4 rounded-full font-bold text-lg md:text-xl transition-all hover:scale-105 shadow-xl shadow-she-primary/30"
+                className="inline-flex flex-col md:flex-row items-center justify-center gap-2 md:gap-3 bg-she-primary hover:bg-she-primaryHover text-white px-6 py-3 md:px-8 md:py-4 rounded-3xl md:rounded-full font-bold text-sm md:text-xl transition-all hover:scale-105 shadow-xl shadow-she-primary/30 max-w-full break-all md:break-normal"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                harvest-club@presidencyuniversity.in
+                <span className="whitespace-normal text-center md:text-left break-words w-full">harvest-club@presidencyuniversity.in</span>
               </a>
             </div>
           </div>
@@ -36,9 +36,9 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-              <img src={sheLeadsLogo} alt="She Leads Logo" className="w-20 h-20 object-contain" />
-              <span className="text-2xl font-black text-white tracking-tighter uppercase">
-                She Leads <span className="text-she-accent">2.0</span>
+              <img src={sheLeadsLogo} alt="SheLeads 2.0 Logo" className="w-20 h-20 object-contain" />
+              <span className="text-2xl font-black text-white tracking-tighter">
+                SheLeads <span className="text-she-accent">2.0</span>
               </span>
             </div>
             <p className="text-she-secondaryText text-xs font-bold uppercase tracking-widest">Presidency University</p>
@@ -72,8 +72,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12 pt-8 border-t border-white/10 text-she-secondaryText text-[10px] font-black uppercase tracking-[0.3em]">
-          &copy; 2026 She Leads Hackathon. Organized by Harvest Club.
+        <div className="text-center mt-8 md:mt-12 pt-8 border-t border-white/10 text-she-secondaryText text-[10px] leading-relaxed font-black tracking-widest md:tracking-[0.3em] px-4 pb-8 md:pb-0">
+          &copy; 2026 SheLeads 2.0 HACKATHON. <br className="md:hidden" /> ORGANISED BY HARVEST CLUB.
         </div>
       </div>
     </footer>
