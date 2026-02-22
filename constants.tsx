@@ -89,11 +89,11 @@ export const SPONSORS: Sponsor[] = [
 import { UserPlus, FileText, Megaphone, Rocket, Trophy } from 'lucide-react';
 
 export const TIMELINE: TimelineItem[] = [
-  { id: 1, date: '18th – 27th Feb', time: 'REGISTRATION', event: 'REGISTRATIONS OPEN', description: 'Registrations open on Unstop online platform.', icon: <UserPlus className="w-8 h-8 text-she-primary" /> },
-  { id: 2, date: '18th – 27th Feb', time: 'SUBMISSION', event: 'ROUND 1 — PPT SUBMISSIONS', description: 'PPT submissions open, allowing participants across the country to submit their ideas.', icon: <FileText className="w-8 h-8 text-she-primary" /> },
-  { id: 3, date: '1st Mar', time: 'ANNOUNCEMENT', event: 'ROUND 1 RESULTS ANNOUNCEMENT', description: 'Announcement of selected teams who will participate in the 24-hour offline round.', icon: <Megaphone className="w-8 h-8 text-she-primary" /> },
-  { id: 4, date: '5th March', time: 'KICKOFF', event: '24-HOUR HACKATHON BEGINS', description: 'The 24-hour She-Fight begins.', icon: <Rocket className="w-8 h-8 text-she-primary" /> },
-  { id: 5, date: '6th March', time: 'CLOSING', event: 'WINNERS ANNOUNCEMENT', description: 'Winners will be announced on the final day of the event.', icon: <Trophy className="w-8 h-8 text-she-primary" /> },
+  { id: 1, date: '18 Feb 26', time: '06:00 PM IST', event: 'Registration Starts', description: 'Registrations open on Unstop online platform.', icon: <UserPlus className="w-8 h-8 text-she-primary" />, status: 'LIVE NOW' },
+  { id: 2, date: '27 Feb 26', time: '11:59 PM IST', event: 'Registration Deadline', description: 'PPT submissions deadline globally.', icon: <FileText className="w-8 h-8 text-she-primary" /> },
+  { id: 3, date: '28 Feb 26', time: '06:00 PM IST', event: 'Shortlisted Teams Announcement', description: 'Announcement of teams for the offline round.', icon: <Megaphone className="w-8 h-8 text-she-primary" /> },
+  { id: 4, date: '05 Mar 26', time: '10:00 AM IST', event: 'Offline Hackathon Starts', description: 'The 24-hour hackathon begins at venue.', icon: <Rocket className="w-8 h-8 text-she-primary" /> },
+  { id: 5, date: '06 Mar 26', time: '02:00 PM IST', event: 'Winners Announcement', description: 'Grand finale and award ceremony.', icon: <Trophy className="w-8 h-8 text-she-primary" /> },
 ];
 
 export const PRIZES: Prize[] = [

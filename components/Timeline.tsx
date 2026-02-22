@@ -12,35 +12,48 @@ const icons = [
 
 const Timeline: React.FC = () => {
   return (
-    <section id="timeline" className="relative py-32 transition-colors duration-700">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="text-center mb-24">
+    <section id="timeline" className="relative py-32 transition-colors duration-700 bg-she-card/30">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center mb-16">
           <h2 className="text-5xl font-black text-she-deepPurple mb-6 uppercase tracking-tighter">Event Journey</h2>
           <p className="text-she-text text-lg font-medium">The 24-hour sprint to build the future.</p>
         </div>
-        <div className="relative space-y-12 before:absolute before:left-6 md:before:left-1/2 before:w-1 before:h-full before:bg-gradient-to-b before:from-she-primary before:to-she-accent before:opacity-20 before:-translate-x-1/2">
-          {TIMELINE.map((item, idx) => (
-            <div key={item.id} className={`relative flex items-center justify-between md:justify-normal gap-10 w-full ${idx % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-              <div className="hidden md:block w-1/2"></div>
 
-              {/* Center Icon Node */}
-              <div className={`absolute left-6 md:left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#FFFFFF] border-4 ${idx % 2 === 0 ? 'border-she-primary shadow-[0_0_15px_rgba(123,63,242,0.4)] text-she-primary' : 'border-she-accent shadow-[0_0_15px_rgba(255,107,157,0.4)] text-she-accent'} z-10 flex items-center justify-center`}>
-                {icons[idx] || <Lightbulb size={20} />}
-              </div>
-
-              <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${idx % 2 === 0 ? 'md:pr-16' : 'md:pl-16'}`}>
-                <div className="bg-she-card p-8 rounded-3xl border border-she-deepPurple/5 hover:border-she-accent transition-colors group">
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-she-primary font-black text-sm uppercase tracking-widest bg-she-primary/5 px-3 py-1 rounded-lg">
-                      {item.date} • {item.time}
-                    </span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {TIMELINE.map((item) => {
+            const [day, month] = item.date.split(' ');
+            return (
+              <div key={item.id} className="bg-[#f3f4f6] rounded-2xl p-6 flex items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
+                {/* Date Badge */}
+                <div className="flex flex-col rounded-xl overflow-hidden shadow-sm min-w-[64px] border border-gray-100">
+                  <div className="bg-[#0066ff] text-white px-2 py-1.5 flex items-center justify-center font-bold text-xl leading-none">
+                    {day}
                   </div>
-                  <h3 className="text-2xl font-black text-she-deepPurple mb-3 uppercase tracking-tight">{item.event}</h3>
-                  <p className="text-she-text text-base font-semibold leading-relaxed">{item.description}</p>
+                  <div className="bg-white text-[#4b5563] px-2 py-1 flex items-center justify-center text-[10px] font-bold uppercase tracking-wider">
+                    {month}
+                  </div>
+                </div>
+
+                {/* Event Content */}
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-1">
+                    <div className="text-sm font-semibold text-[#374151]">
+                      {item.date}, {item.time}
+                    </div>
+                    {item.status && (
+                      <span className="flex items-center gap-1.5 px-2 py-0.5 bg-red-100 text-red-600 text-[10px] font-bold rounded-full animate-pulse border border-red-200 uppercase tracking-tight">
+                        <span className="w-1.5 h-1.5 bg-red-600 rounded-full"></span>
+                        {item.status}
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-[#111827] leading-tight">
+                    {item.event}
+                  </h3>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

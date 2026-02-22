@@ -33,6 +33,7 @@ export interface TimelineItem {
   event: string;
   description: string;
   icon: React.ReactNode;
+  status?: string;
 }
 
 export interface Prize {
