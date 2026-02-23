@@ -106,7 +106,7 @@ const RulesAndGuidelines: React.FC = () => {
                         <ul className="list-disc pl-5 space-y-1 text-sm">
                             <li>Safety & SOS Applications</li>
                             <li>Emergency Response & Geo-Intelligence</li>
-                            <li>Smart Wearables for Protection</li>
+                            <li>Wearable-Integrated Safety Software</li>
                             <li>Legal Awareness & Community Support Platforms</li>
                         </ul>
                     </div>
@@ -186,8 +186,8 @@ const RulesAndGuidelines: React.FC = () => {
                 <div className="space-y-6">
                     <ul className="list-disc pl-5 space-y-1">
                         <li>Teams may brainstorm and plan before the event.</li>
-                        <li>However, all implementation (coding, design, hardware assembly) must begin only after the hackathon officially starts.</li>
-                        <li>Both software and hardware projects are allowed.</li>
+                        <li>However, all implementation (coding, design) must begin only after the hackathon officially starts.</li>
+                        <li className="text-red-500 font-bold underline">Note: Participants are not allowed to develop physical hardware prototypes; hardware-based ideas can be showcased using software models, virtual simulations, or platform integrations.</li>
                         <li>Use of open-source libraries, APIs, and public datasets is permitted with proper attribution.</li>
                         <li>Plagiarism, copying, or submitting previously completed work is strictly prohibited.</li>
                     </ul>

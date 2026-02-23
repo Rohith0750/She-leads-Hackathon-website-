@@ -25,7 +25,7 @@ export const TRACKS: Track[] = [
     subTracks: [
       'Safety & SOS Applications',
       'Emergency Response & Geo-Intelligence',
-      'Smart Wearables for Protection',
+      'Wearable-Integrated Safety Software',
       'Legal Awareness & Community Support Platforms'
     ],
     themeColor: 'purple',
